@@ -1,15 +1,16 @@
-
-
+```html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>La Madrugá — Cristo de la Buena Muerte</title>
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -86,12 +87,12 @@
       overflow: hidden;
       text-decoration: none;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-      transition: 0.4s;
     }
+
+    /* SIN MOVIMIENTO AL PASAR EL RATÓN */
 
     .sala:hover {
       border-color: #d8b66a;
-      transform: translateY(-5px);
     }
 
     .sala img {
@@ -100,11 +101,6 @@
       display: block;
       object-fit: contain;
       background: #050505;
-      transition: transform 0.5s;
-    }
-
-    .sala:hover img {
-      transform: scale(1.03);
     }
 
     .titulo {
@@ -173,6 +169,7 @@
       .sala img {
         height: 500px;
       }
+
     }
 
     @media (max-width: 500px) {
@@ -189,66 +186,151 @@
         display: inline-block;
         margin: 6px 8px;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
+
   <header>
+
     <h1>La Madrugá</h1>
-    <p>Cristo de la Buena Muerte · Jerez de la Frontera</p>
+
+    <p>
+      Cristo de la Buena Muerte · Jerez de la Frontera
+    </p>
+
   </header>
 
+
   <nav>
+
     <a href="index.html">Portada</a>
+
     <a href="madruga.html">La Madrugá</a>
+
     <a href="dulce-nombre.html">Dulce Nombre</a>
+
     <a href="itinerario.html">Itinerario</a>
+
     <a href="galeria.html">Galería</a>
+
   </nav>
 
+
   <div class="intro">
+
     <p>
       Una mirada a los momentos que forman parte de la Madrugá:
       la salida, el silencio, el camino, la devoción, la saeta
       y el regreso.
     </p>
+
   </div>
+
 
   <main class="salas">
 
-    <a class="sala" href="#">
-      <img src="4 BUENA MUERTE (1).jpg" alt="La Salida">
-      <div class="titulo">La Salida</div>
+
+    <!-- LA SALIDA -->
+
+    <a class="sala" href="la-salida.html">
+
+      <img
+        src="4 BUENA MUERTE (1).jpg"
+        alt="La Salida">
+
+      <div class="titulo">
+        La Salida
+      </div>
+
     </a>
 
-    <a class="sala" href="#">
-      <img src="3-10.jpg" alt="El Silencio">
-      <div class="titulo">El Silencio</div>
+
+    <!-- EL SILENCIO -->
+
+    <a class="sala" href="el-silencio.html">
+
+      <img
+        src="3-10.jpg"
+        alt="El Silencio">
+
+      <div class="titulo">
+        El Silencio
+      </div>
+
     </a>
 
-    <a class="sala" href="#">
-      <img src="cristo-buena-muerte.jpg" alt="El Camino">
-      <div class="titulo">El Camino</div>
+
+    <!-- EL CAMINO -->
+
+    <a class="sala" href="el-camino.html">
+
+      <img
+        src="cristo-buena-muerte.jpg"
+        alt="El Camino">
+
+      <div class="titulo">
+        El Camino
+      </div>
+
     </a>
 
-    <a class="sala" href="#">
-      <img src="10g.jpg" alt="La Devoción">
-      <div class="titulo">La Devoción</div>
+
+    <!-- LA DEVOCIÓN -->
+
+    <a class="sala" href="la-devocion.html">
+
+      <img
+        src="10g.jpg"
+        alt="La Devoción">
+
+      <div class="titulo">
+        La Devoción
+      </div>
+
     </a>
 
-    <a class="sala" href="#">
-      <img src="images (1).jfif" alt="La Saeta">
-      <div class="titulo">La Saeta</div>
+
+    <!-- LA SAETA -->
+
+    <a class="sala" href="la-saeta.html">
+
+      <img
+        src="images (1).jfif"
+        alt="La Saeta">
+
+      <div class="titulo">
+        La Saeta
+      </div>
+
     </a>
 
-    <a class="sala" href="#">
-      <img src="4 BUENA MUERTE-13.jpg" alt="El Regreso">
-      <div class="titulo">El Regreso</div>
+
+    <!-- EL REGRESO -->
+
+    <a class="sala" href="el-regreso.html">
+
+      <img
+        src="4 BUENA MUERTE-13.jpg"
+        alt="El Regreso">
+
+      <div class="titulo">
+        El Regreso
+      </div>
+
     </a>
+
 
   </main>
+
+
+  <!-- MÚSICA -->
 
   <iframe
     class="youtube"
@@ -257,22 +339,38 @@
     allow="autoplay">
   </iframe>
 
+
   <button class="musica" onclick="activarMusica()">
+
     ♪ Música
+
   </button>
 
+
   <footer>
+
     Cristo de la Buena Muerte · Jerez de la Frontera
+
   </footer>
 
+
   <script>
+
     function activarMusica() {
+
       document.getElementById("youtube").src =
         "https://www.youtube.com/embed/0BkiIWfSYhA?autoplay=1&loop=1&playlist=0BkiIWfSYhA&controls=0&rel=0";
+
     }
+
   </script>
 
+
 </body>
+
 </html>
+```
+
+
 
 
