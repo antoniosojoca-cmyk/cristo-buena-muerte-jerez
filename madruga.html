@@ -1,0 +1,407 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>La Madrugá — Cristo de la Buena Muerte</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #080808;
+      color: #f2eee6;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    /* CABECERA */
+
+    header {
+      text-align: center;
+      padding: 55px 20px 35px;
+      background: linear-gradient(
+        to bottom,
+        #111111,
+        #080808
+      );
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(38px, 6vw, 68px);
+      font-weight: normal;
+      letter-spacing: 5px;
+      color: #f2eee6;
+      text-transform: uppercase;
+      text-shadow: 0 3px 10px #000;
+    }
+
+    header p {
+      margin: 15px 0 0;
+      font-size: 21px;
+      letter-spacing: 3px;
+      color: #c9a35b;
+    }
+
+    /* MENÚ */
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 20px;
+      background: #080808;
+      border-top: 1px solid #272727;
+      border-bottom: 1px solid #272727;
+    }
+
+    nav a {
+      color: #eee7db;
+      text-decoration: none;
+      border: 1px solid #c9a35b;
+      padding: 11px 19px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #c9a35b;
+      color: #080808;
+    }
+
+    /* PRESENTACIÓN */
+
+    .intro {
+      max-width: 850px;
+      margin: 45px auto 30px;
+      padding: 0 25px;
+      text-align: center;
+    }
+
+    .intro p {
+      margin: 0;
+      font-size: 19px;
+      line-height: 1.8;
+      color: #d8d1c5;
+      font-style: italic;
+    }
+
+    /* SEIS SALAS */
+
+    .salas {
+      max-width: 1200px;
+      margin: 45px auto 70px;
+      padding: 0 20px;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .sala {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #c9a35b;
+      background: #111111;
+      text-decoration: none;
+      color: #ffffff;
+      min-height: 330px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .sala img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.6s ease;
+    }
+
+    .sala::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.90),
+        rgba(0,0,0,0.05) 65%
+      );
+      transition: background 0.4s ease;
+    }
+
+    .sala:hover img {
+      transform: scale(1.07);
+    }
+
+    .sala:hover::after {
+      background: linear-gradient(
+        to top,
+        rgba(201,163,91,0.65),
+        rgba(0,0,0,0.15) 70%
+      );
+    }
+
+    .titulo-sala {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    .titulo-sala h2 {
+      margin: 0;
+      font-size: 27px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 8px #000;
+    }
+
+    /* BOTÓN MÚSICA */
+
+    .musica {
+      position: fixed;
+      right: 18px;
+      top: 18px;
+      z-index: 20;
+    }
+
+    .musica button {
+      background: rgba(0,0,0,0.78);
+      border: 1px solid #c9a35b;
+      color: #c9a35b;
+      padding: 10px 16px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .musica button:hover {
+      background: #c9a35b;
+      color: #080808;
+    }
+
+    /* YOUTUBE OCULTO */
+
+    .youtube {
+      position: fixed;
+      width: 1px;
+      height: 1px;
+      left: -100px;
+      top: -100px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* PIE */
+
+    footer {
+      text-align: center;
+      padding: 25px 15px 35px;
+      border-top: 1px solid #252525;
+      color: #8f887d;
+      font-size: 13px;
+    }
+
+    /* MÓVIL */
+
+    @media (max-width: 850px) {
+      .salas {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .salas {
+        grid-template-columns: 1fr;
+      }
+
+      .sala {
+        min-height: 360px;
+      }
+
+      header h1 {
+        letter-spacing: 2px;
+      }
+
+      nav a {
+        width: 90%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>La Madrugá</h1>
+    <p>Cristo de la Buena Muerte · Jerez de la Frontera</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Portada</a>
+    <a href="madruga.html">La Madrugá</a>
+    <a href="dulce-nombre.html">Dulce Nombre</a>
+    <a href="itinerario.html">Itinerario</a>
+    <a href="galeria.html">Galería</a>
+  </nav>
+
+  <section class="intro">
+    <p>
+      Seis momentos para recorrer una noche de fe,
+      silencio, devoción y sentimiento junto al
+      Cristo de la Buena Muerte.
+    </p>
+  </section>
+
+
+  <main class="salas">
+
+    <!-- LA SALIDA -->
+
+    <a class="sala" href="#">
+      <img
+        src="4 BUENA MUERTE (1).jpg"
+        alt="La Salida"
+      >
+
+      <div class="titulo-sala">
+        <h2>La Salida</h2>
+      </div>
+    </a>
+
+
+    <!-- EL SILENCIO -->
+
+    <a class="sala" href="#">
+      <img
+        src="3-10.jpg"
+        alt="El Silencio"
+      >
+
+      <div class="titulo-sala">
+        <h2>El Silencio</h2>
+      </div>
+    </a>
+
+
+    <!-- EL CAMINO -->
+
+    <a class="sala" href="#">
+      <img
+        src="cristo-buena-muerte.jpg"
+        alt="El Camino"
+      >
+
+      <div class="titulo-sala">
+        <h2>El Camino</h2>
+      </div>
+    </a>
+
+
+    <!-- LA DEVOCIÓN -->
+
+    <a class="sala" href="#">
+      <img
+        src="10g.jpg"
+        alt="La Devoción"
+      >
+
+      <div class="titulo-sala">
+        <h2>La Devoción</h2>
+      </div>
+    </a>
+
+
+    <!-- LA SAETA -->
+
+    <a class="sala" href="#">
+      <img
+        src="images (1).jfif"
+        alt="La Saeta"
+      >
+
+      <div class="titulo-sala">
+        <h2>La Saeta</h2>
+      </div>
+    </a>
+
+
+    <!-- EL REGRESO -->
+
+    <a class="sala" href="#">
+      <img
+        src="4 BUENA MUERTE-13.jpg"
+        alt="El Regreso"
+      >
+
+      <div class="titulo-sala">
+        <h2>El Regreso</h2>
+      </div>
+    </a>
+
+  </main>
+
+
+  <!-- MÚSICA DE YOUTUBE -->
+
+  <div class="youtube">
+
+    <iframe
+      id="youtubeVideo"
+      width="1"
+      height="1"
+      src="https://www.youtube.com/embed/W-Q_LYp_eTw?autoplay=1&loop=1&playlist=W-Q_LYp_eTw&controls=0&rel=0"
+      title="Música de La Madrugá"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
+
+  <!-- BOTÓN DE MÚSICA -->
+
+  <div class="musica">
+
+    <button onclick="activarMusica()">
+      ♪ Música
+    </button>
+
+  </div>
+
+
+  <script>
+
+    function activarMusica() {
+
+      const video = document.getElementById("youtubeVideo");
+
+      video.src =
+        "https://www.youtube.com/embed/W-Q_LYp_eTw?autoplay=1&loop=1&playlist=W-Q_LYp_eTw&controls=0&rel=0";
+
+    }
+
+  </script>
+
+
+  <footer>
+    Cristo de la Buena Muerte · Jerez de la Frontera
+  </footer>
+
+</body>
+</html>
+```
