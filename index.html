@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cristo de la Buena Muerte — Jerez de la Frontera</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #080808;
+      color: #f2eee6;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .portada {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.78)),
+        url("FOTO-PORTADA.jpg") center center / cover no-repeat;
+    }
+
+    .titulo {
+      max-width: 1000px;
+      margin-bottom: 45px;
+    }
+
+    .titulo h1 {
+      margin: 0;
+      font-size: clamp(38px, 6vw, 78px);
+      font-weight: normal;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: 0 3px 12px #000;
+    }
+
+    .titulo p {
+      margin-top: 18px;
+      font-size: clamp(18px, 2.5vw, 28px);
+      letter-spacing: 4px;
+      color: #c9a35b;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 1000px;
+    }
+
+    .menu a {
+      display: block;
+      padding: 16px 25px;
+      border: 1px solid #c9a35b;
+      color: #f2eee6;
+      text-decoration: none;
+      font-size: 18px;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      background: rgba(0,0,0,0.45);
+    }
+
+    .menu a:hover {
+      background: #c9a35b;
+      color: #080808;
+    }
+
+    .frase {
+      margin-top: 50px;
+      max-width: 700px;
+      font-size: 18px;
+      font-style: italic;
+      line-height: 1.7;
+      color: #ddd6c9;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+      color: #9d968b;
+    }
+
+    @media (max-width: 600px) {
+      .menu {
+        flex-direction: column;
+        width: 90%;
+      }
+
+      .menu a {
+        width: 100%;
+      }
+
+      .titulo h1 {
+        letter-spacing: 1px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="portada">
+
+    <div class="titulo">
+      <h1>Cristo de la Buena Muerte</h1>
+      <p>Jerez de la Frontera</p>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Portada</a>
+      <a href="madruga.html">La Madrugá</a>
+      <a href="dulce-nombre.html">Dulce Nombre</a>
+      <a href="itinerario.html">Itinerario</a>
+      <a href="galeria.html">Galería</a>
+    </nav>
+
+    <div class="frase">
+      Una mirada personal a la devoción, la historia,
+      la Madrugá y los momentos que permanecen en la memoria.
+    </div>
+
+  </section>
+
+  <footer>
+    Cristo de la Buena Muerte · Jerez de la Frontera
+  </footer>
+
+</body>
+</html>
