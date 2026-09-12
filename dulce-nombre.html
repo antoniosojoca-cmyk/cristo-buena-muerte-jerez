@@ -3,247 +3,238 @@
 <html lang="es">
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>María Santísima del Dulce Nombre</title>
 
-  <title>Dulce Nombre</title>
+<style>
 
-  <style>
+* {
+  box-sizing: border-box;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+body {
+  margin: 0;
+  background: #080808;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+}
 
-    body {
-      margin: 0;
-      background: #080808;
-      color: #ffffff;
-      font-family: Georgia, "Times New Roman", serif;
-    }
+header {
+  text-align: center;
+  padding: 55px 20px 35px;
+}
 
-    header {
-      text-align: center;
-      padding: 55px 20px 35px;
-    }
+header h1 {
+  margin: 0;
+  color: #c9a35b;
+  font-size: 42px;
+  font-weight: normal;
+}
 
-    h1 {
-      margin: 0;
-      color: #c9a35b;
-      font-size: 42px;
-      font-weight: normal;
-      letter-spacing: 2px;
-    }
+header p {
+  color: #ddd;
+  font-size: 18px;
+  margin-top: 12px;
+}
 
-    .subtitulo {
-      margin-top: 12px;
-      color: #bdbdbd;
-      font-size: 18px;
-    }
+.menu {
+  text-align: center;
+  margin: 10px 0 40px;
+}
 
-    nav {
-      text-align: center;
-      padding: 15px 10px 35px;
-    }
+.menu a {
+  color: #c9a35b;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 17px;
+}
 
-    nav a {
-      color: #c9a35b;
-      text-decoration: none;
-      margin: 0 12px;
-      font-size: 17px;
-    }
+.menu a:hover {
+  color: white;
+}
 
-    nav a:hover {
-      color: #ffffff;
-    }
+.salas {
+  width: 94%;
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  padding-bottom: 60px;
+}
 
-    .salas {
-      width: 94%;
-      max-width: 1500px;
-      margin: 0 auto 60px;
+.sala {
+  background: #050505;
+  border: 1px solid #c9a35b;
+  padding: 8px;
+  text-align: center;
+}
 
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 35px;
-    }
+.sala h2 {
+  color: #c9a35b;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 18px 10px;
+}
 
-    .sala {
-      display: block;
-      text-decoration: none;
-      color: #ffffff;
+.sala img {
+  width: 100%;
+  height: 460px;
+  object-fit: contain;
+  display: block;
+  background: #000000;
+}
 
-      background: #050505;
-      border: 1px solid #c9a35b;
+.sala a {
+  text-decoration: none;
+}
 
-      padding: 8px;
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #333;
+  color: #888;
+}
 
-      overflow: hidden;
-    }
+@media (max-width: 800px) {
 
-    .sala img {
-      width: 100%;
-      height: 460px;
+  .salas {
+    grid-template-columns: 1fr;
+  }
 
-      object-fit: contain;
-      object-position: center;
+  header h1 {
+    font-size: 32px;
+  }
 
-      display: block;
-      background: #050505;
-    }
+  .sala img {
+    height: 400px;
+  }
 
-    .sala h2 {
-      margin: 0;
-      padding: 20px 10px 22px;
+  .menu a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
 
-      text-align: center;
+}
 
-      color: #c9a35b;
-      font-size: 25px;
-      font-weight: normal;
-    }
-
-    .sala:hover h2 {
-      color: #ffffff;
-    }
-
-    @media (max-width: 800px) {
-
-      h1 {
-        font-size: 32px;
-      }
-
-      .salas {
-        grid-template-columns: 1fr;
-        width: 94%;
-      }
-
-      .sala img {
-        height: auto;
-        max-height: 520px;
-      }
-
-    }
-
-  </style>
-
+</style>
 </head>
-
 
 <body>
 
+<header>
 
-  <header>
+  <h1>María Santísima del Dulce Nombre</h1>
 
-    <h1>Dulce Nombre</h1>
+  <p>La Madrugá · Jerez de la Frontera</p>
 
-    <div class="subtitulo">
-      María Santísima del Dulce Nombre
-    </div>
+</header>
 
-  </header>
+<nav class="menu">
 
+  <a href="index.html">Portada</a>
+  <a href="madruga.html">La Madrugá</a>
+  <a href="dulce-nombre.html">Dulce Nombre</a>
+  <a href="itinerario.html">Itinerario</a>
+  <a href="galeria.html">Galería</a>
 
-  <nav>
+</nav>
 
-    <a href="index.html">Portada</a>
+<section class="salas">
 
-    <a href="madruga.html">La Madrugá</a>
+  <!-- LA SALIDA -->
 
-    <a href="dulce-nombre.html">Dulce Nombre</a>
+  <div class="sala">
 
-    <a href="itinerario.html">Itinerario</a>
-
-    <a href="galeria.html">Galería</a>
-
-  </nav>
-
-
-  <main class="salas">
-
-
-    <!-- IMAGEN 1 -->
-
-    <a class="sala" href="#">
-
-      <img
-        src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Madrugada_Viernes_Santo_2019_Jerez-P1350862.jpg/960px-Madrugada_Viernes_Santo_2019_Jerez-P1350862.jpg"
-        alt="Dulce Nombre">
-
-      <h2>La Salida</h2>
-
+    <a href="#">
+      <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Madrugada_Viernes_Santo_2019_Jerez-P1350862.jpg/960px-Madrugada_Viernes_Santo_2019_Jerez-P1350862.jpg"
+           alt="La Salida">
     </a>
 
+    <h2>La Salida</h2>
 
-    <!-- IMAGEN 2 -->
+  </div>
 
-    <a class="sala" href="#">
 
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Madrugada_Viernes_Santo_2019_Jerez-P1350774.jpg"
-        alt="Dulce Nombre">
+  <!-- EL CAMINO -->
 
-      <h2>El Camino</h2>
+  <div class="sala">
 
+    <a href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Madrugada_Viernes_Santo_2019_Jerez-P1350774.jpg"
+           alt="El Camino">
     </a>
 
+    <h2>El Camino</h2>
 
-    <!-- IMAGEN 3 -->
+  </div>
 
-    <a class="sala" href="#">
 
-      <img
-        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-hceDQkLBIm9pCuMvfzRUwzkBmZrkDAcJjrQ4_vP-5EbaQML3LkPUEbcfOTmjZwtYgjQsqYFpF7harzJnyG6jHtH7-uxc-n5GwcBVqbq1rWep1d4Lx7bpKoEtzL6HPNAQVBjYSgfVXChY/s1600/IMG_1936.JPG"
-        alt="Dulce Nombre">
+  <!-- LA MADRUGÁ -->
 
-      <h2>La Madrugá</h2>
+  <div class="sala">
 
+    <a href="#">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-hceDQkLBIm9pCuMvfzRUwzkBmZrkDAcJjrQ4_vP-5EbaQML3LkPUEbcfOTmjZwtYgjQsqYFpF7harzJnyG6jHtH7-uxc-n5GwcBVqbq1rWep1d4Lx7bpKoEtzL6HPNAQVBjYSgfVXChY/s1600/IMG_1936.JPG"
+           alt="La Madrugá">
     </a>
 
+    <h2>La Madrugá</h2>
 
-    <!-- IMAGEN 4 -->
+  </div>
 
-    <a class="sala" href="#">
 
-      <img
-        src="https://exaltaciontarancon.wordpress.com/wp-content/uploads/2013/03/dulce-nombre-jerez-de-la-frontera-3.jpg"
-        alt="Dulce Nombre">
+  <!-- LA DEVOCIÓN -->
 
-      <h2>La Devoción</h2>
+  <div class="sala">
 
+    <a href="#">
+      <img src="https://exaltaciontarancon.wordpress.com/wp-content/uploads/2013/03/dulce-nombre-jerez-de-la-frontera-3.jpg"
+           alt="La Devoción">
     </a>
 
+    <h2>La Devoción</h2>
 
-    <!-- IMAGEN 5 -->
+  </div>
 
-    <a class="sala" href="#">
 
-      <img
-        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW79rNExmIIRkivMwH6dGBgki4wyoPnsLAdS_Hi9kIxMLYSPk2JZXGo-U4oehaajNRl22z3gThQhcVskJ_lu6mkkMcOP3aYeFm9K9x0qkkClsXpKMmVlMUBRAnUf8pMR0TppukWJXFJCuI4rpfrb7sz7weCso_jBvJ7KCqt6jHRcyki5JCfrA9fM3GF6ihB/s3696/Foto%20(639).jpg"
-        alt="Dulce Nombre">
+  <!-- LA SAETA -->
 
-      <h2>La Saeta</h2>
+  <div class="sala">
 
+    <a href="#">
+      <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/La_Saeta_by_Julio_Romero_de_Torres.jpg/960px-La_Saeta_by_Julio_Romero_de_Torres.jpg?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+           alt="La Saeta">
     </a>
 
+    <h2>La Saeta</h2>
 
-    <!-- IMAGEN 6 -->
+  </div>
 
-    <a class="sala" href="#">
 
-      <img
-        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic3D0NIV9qccMyNbZdW00SVMGl1YK4ba7jTgtfF3qfhbW_cQsrRxCEEDgBNHLHF-RG4WNcgUVjPI8hUijtIrpsCGm7jLdFkDi0s8z3rzu7ImI1jL7uPQBpFiIc739NJ1Vs5p2XM7h9p3LHSDLh77mVbxzzmi3oUBZU70FFobOX4BA9l3az1dXJURfKlK2/s3696/Foto%20(643).jpg"
-        alt="Dulce Nombre">
+  <!-- EL REGRESO -->
 
-      <h2>El Regreso</h2>
+  <div class="sala">
 
+    <a href="#">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg79k4LK4mYBubhZ6TysrVIgep_EQCMnmpoid1qpBBASnDBlPledNImayp60XtQw2m_8pqUHM3xBq9NkOX3XSD6aFuV1GWY51aMZ5ovYkSdgsp7A_PRk8yPxBRE5idZ5727FMLcOv_FT-shPuVM9G1rRiE05JOuyRUbGwQTv7v7D6QRVmDYfYTS09Lf2RYi/s3696/Foto%20(697).jpg"
+           alt="El Regreso">
     </a>
 
+    <h2>El Regreso</h2>
 
-  </main>
+  </div>
 
+</section>
+
+<footer>
+
+  María Santísima del Dulce Nombre · Hermandad de la Buena Muerte
+
+</footer>
 
 </body>
-
 </html>
-
 
