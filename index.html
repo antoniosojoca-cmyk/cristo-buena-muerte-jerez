@@ -1,72 +1,109 @@
 
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Cristo de la Buena Muerte — Jerez de la Frontera</title>
 
   <style>
+
     * {
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
     }
 
     body {
-      margin: 0;
       background: #080808;
       color: #f2eee6;
       font-family: Georgia, "Times New Roman", serif;
     }
 
+    /* PORTADA */
+
     .portada {
       position: relative;
+      width: 100%;
       min-height: 100vh;
+      min-height: 100svh;
+
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
       align-items: center;
-      justify-content: center;
+
       text-align: center;
       overflow: hidden;
+
       background: #080808;
     }
 
+    /* IMAGEN PRINCIPAL */
+
     .imagen-portada {
       position: absolute;
+
       top: 0;
       left: 0;
+
       width: 100%;
       height: 100%;
-      object-fit: contain;
-      object-position: center top;
+
+      object-fit: cover;
+      object-position: center center;
+
+      display: block;
+
       z-index: 0;
     }
 
+    /* OSCURECIMIENTO SUAVE */
+
     .portada::after {
       content: "";
+
       position: absolute;
       inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.15),
-        rgba(0,0,0,0.48)
-      );
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,0.08),
+          rgba(0,0,0,0.20) 45%,
+          rgba(0,0,0,0.72) 100%
+        );
+
       z-index: 1;
+
+      pointer-events: none;
     }
+
+    /* CONTENIDO */
 
     .contenido {
       position: relative;
+
       z-index: 2;
+
       width: 100%;
-      padding: 30px 20px;
-      margin-top: auto;
-      margin-bottom: 30px;
+      max-width: 1200px;
+
+      padding: 30px 20px 55px;
+
+      margin: 0 auto;
     }
+
+    /* TITULO */
 
     .titulo {
       margin-bottom: 28px;
@@ -74,159 +111,248 @@
 
     .titulo h1 {
       margin: 0;
+
       font-size: clamp(34px, 5vw, 68px);
+
       font-weight: normal;
+
       letter-spacing: 3px;
+
       text-transform: uppercase;
-      text-shadow: 0 3px 12px #000;
+
+      color: #f2eee6;
+
+      text-shadow:
+        0 3px 12px #000,
+        0 1px 3px #000;
     }
 
     .titulo p {
       margin: 12px 0 0;
+
       font-size: clamp(18px, 2.5vw, 28px);
+
       letter-spacing: 4px;
+
       color: #d1ad68;
-      text-shadow: 0 2px 8px #000;
+
+      text-shadow:
+        0 2px 8px #000;
     }
 
+    /* MENU */
+
     .menu {
+      width: 100%;
+
       display: flex;
+
       flex-wrap: wrap;
+
       justify-content: center;
+
+      align-items: center;
+
       gap: 12px;
-      max-width: 1100px;
-      margin: auto;
+
+      margin: 0 auto;
     }
 
     .menu a {
       display: block;
+
       padding: 14px 23px;
+
       border: 1px solid #c9a35b;
+
       color: #f2eee6;
+
       text-decoration: none;
+
       font-size: 17px;
+
       letter-spacing: 1px;
-      background: rgba(0,0,0,0.62);
+
+      background: rgba(0,0,0,0.65);
+
       transition: all 0.3s ease;
     }
 
     .menu a:hover {
       background: #c9a35b;
+
       color: #080808;
     }
 
+    /* FRASE */
+
     .frase {
       max-width: 720px;
+
       margin: 25px auto 0;
+
       font-size: 17px;
+
       font-style: italic;
+
       line-height: 1.6;
+
       color: #eee7db;
-      text-shadow: 0 2px 8px #000;
+
+      text-shadow:
+        0 2px 8px #000;
     }
+
+    /* PIE */
 
     footer {
       position: absolute;
-      bottom: 10px;
+
       left: 0;
+      bottom: 10px;
+
       width: 100%;
+
       text-align: center;
+
       font-size: 12px;
+
       color: #d0c8ba;
+
       z-index: 3;
-      text-shadow: 0 2px 5px #000;
+
+      text-shadow:
+        0 2px 5px #000;
     }
 
-    /* BOTÓN DE MÚSICA */
+    /* BOTON MUSICA */
 
     .musica {
       position: fixed;
+
       top: 18px;
       right: 18px;
+
       z-index: 10;
     }
 
     .musica button {
       background: rgba(0,0,0,0.72);
+
       border: 1px solid #c9a35b;
+
       color: #c9a35b;
+
       padding: 10px 16px;
+
       font-family: Georgia, "Times New Roman", serif;
+
       font-size: 14px;
+
       cursor: pointer;
+
       border-radius: 2px;
     }
 
     .musica button:hover {
       background: #c9a35b;
+
       color: #080808;
     }
 
-    /* VIDEO DE YOUTUBE OCULTO */
+    /* YOUTUBE OCULTO */
 
     .youtube {
       position: fixed;
+
       width: 1px;
       height: 1px;
+
       left: -100px;
       top: -100px;
+
       opacity: 0;
+
       pointer-events: none;
     }
+
+    /* MOVIL */
 
     @media (max-width: 700px) {
 
       .portada {
+        min-height: 100vh;
         min-height: 100svh;
       }
 
       .imagen-portada {
-        object-fit: contain;
-        object-position: center top;
+        object-fit: cover;
+        object-position: center center;
       }
 
       .contenido {
-        padding: 20px 15px 35px;
-        margin-top: auto;
-        margin-bottom: 25px;
+        padding: 20px 15px 45px;
+      }
+
+      .titulo {
+        margin-bottom: 22px;
       }
 
       .titulo h1 {
-        font-size: 32px;
+        font-size: 31px;
+
         letter-spacing: 1px;
       }
 
       .titulo p {
         font-size: 18px;
+
         letter-spacing: 2px;
       }
 
       .menu {
-        width: 95%;
+        width: 94%;
+
         gap: 8px;
       }
 
       .menu a {
         width: 100%;
+
         padding: 12px 15px;
+
         font-size: 16px;
       }
 
       .frase {
         font-size: 15px;
+
         margin-top: 18px;
       }
 
       footer {
         font-size: 10px;
       }
+
+      .musica {
+        top: 12px;
+        right: 12px;
+      }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
+
   <section class="portada">
+
+
+    <!-- IMAGEN DE PORTADA -->
 
     <img
       class="imagen-portada"
@@ -234,44 +360,81 @@
       alt="Santísimo Cristo de la Buena Muerte de Jerez de la Frontera"
     >
 
+
+    <!-- CONTENIDO -->
+
     <div class="contenido">
 
+
       <div class="titulo">
-        <h1>Cristo de la Buena Muerte</h1>
-        <p>Jerez de la Frontera</p>
+
+        <h1>
+          Cristo de la Buena Muerte
+        </h1>
+
+        <p>
+          Jerez de la Frontera
+        </p>
+
       </div>
+
+
+      <!-- MENU PRINCIPAL -->
 
       <nav class="menu">
 
-        <a href="index.html">Portada</a>
+        <a href="index.html">
+          Portada
+        </a>
 
-        <a href="madruga.html">La Madrugá</a>
+        <a href="madruga.html">
+          La Madrugá
+        </a>
 
-        <a href="dulce-nombre.html">Dulce Nombre</a>
+        <a href="dulce-nombre.html">
+          Dulce Nombre
+        </a>
 
-        <a href="itinerario.html">Itinerario</a>
+        <a href="itinerario.html">
+          Itinerario
+        </a>
 
-        <a href="galeria.html">Galería</a>
+        <a href="galeria.html">
+          Galería
+        </a>
 
       </nav>
 
+
+      <!-- FRASE -->
+
       <div class="frase">
+
         Una mirada personal a la devoción,
         la Madrugá y los momentos que permanecen en la memoria.
+
       </div>
+
 
     </div>
 
+
+    <!-- PIE -->
+
     <footer>
+
       Cristo de la Buena Muerte · Jerez de la Frontera
+
     </footer>
+
 
   </section>
 
 
-  <!-- MÚSICA DE YOUTUBE -->
+  <!-- MUSICA -->
 
   <div class="youtube">
+
     <iframe
       id="youtubeVideo"
       width="1"
@@ -282,15 +445,18 @@
       allow="autoplay; encrypted-media"
       allowfullscreen>
     </iframe>
+
   </div>
 
 
-  <!-- BOTÓN PARA ACTIVAR LA MÚSICA SI EL NAVEGADOR LA BLOQUEA -->
+  <!-- BOTON MUSICA -->
 
   <div class="musica">
+
     <button onclick="activarMusica()">
       ♪ Música
     </button>
+
   </div>
 
 
@@ -298,7 +464,8 @@
 
     function activarMusica() {
 
-      const video = document.getElementById("youtubeVideo");
+      const video =
+        document.getElementById("youtubeVideo");
 
       video.src =
         "https://www.youtube.com/embed/W-Q_LYp_eTw?autoplay=1&loop=1&playlist=W-Q_LYp_eTw&controls=0&rel=0";
@@ -307,7 +474,9 @@
 
   </script>
 
+
 </body>
+
 </html>
 
 
