@@ -85,6 +85,45 @@ footer {
   color: #888;
 }
 
+
+/* MUSICA */
+
+.musica {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 100;
+}
+
+.musica button {
+  background: rgba(0,0,0,0.72);
+  border: 1px solid #c9a35b;
+  color: #c9a35b;
+  padding: 10px 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.musica button:hover {
+  background: #c9a35b;
+  color: #080808;
+}
+
+.youtube {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  left: -100px;
+  top: -100px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* MOVIL */
+
 @media (max-width: 800px) {
 
   header h1 {
@@ -108,6 +147,7 @@ footer {
 
 <body>
 
+
 <header>
 
   <h1>La Salida</h1>
@@ -115,6 +155,7 @@ footer {
   <p>María Santísima del Dulce Nombre · Jerez de la Frontera</p>
 
 </header>
+
 
 <nav class="menu">
 
@@ -177,12 +218,60 @@ footer {
 </section>
 
 
+<!-- MUSICA -->
+
+<div class="youtube">
+
+  <iframe
+    id="youtubeVideo"
+    width="1"
+    height="1"
+    src="https://www.youtube.com/embed/J-_iNiPBbKA?autoplay=1&loop=1&playlist=J-_iNiPBbKA&controls=0&rel=0"
+    title="Dulce Nombre de María - Las Cigarreras"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+
+</div>
+
+
+<!-- BOTON MUSICA -->
+
+<div class="musica">
+
+  <button onclick="activarMusica()">
+    ♪ Música
+  </button>
+
+</div>
+
+
+<script>
+
+function activarMusica() {
+
+  const video =
+    document.getElementById("youtubeVideo");
+
+  video.src =
+    "https://www.youtube.com/embed/J-_iNiPBbKA?autoplay=1&loop=1&playlist=J-_iNiPBbKA&controls=0&rel=0";
+
+}
+
+</script>
+
+
 <footer>
 
   María Santísima del Dulce Nombre · La Salida · Jerez de la Frontera
 
 </footer>
 
+
 </body>
 
 </html>
+
+
+
