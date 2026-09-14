@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>El Camino — Dulce Nombre de María</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #050505;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* CABECERA */
+
+header {
+  text-align: center;
+  padding: 35px 20px 25px;
+  border-bottom: 1px solid #c9a35b;
+}
+
+header h1 {
+  margin: 0;
+  color: #c9a35b;
+  font-size: 42px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin: 10px 0 0;
+  color: #ddd;
+  font-size: 18px;
+}
+
+/* MENU */
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c9a35b;
+  border: 1px solid #c9a35b;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #c9a35b;
+  color: #050505;
+}
+
+/* TITULO */
+
+.titulo {
+  text-align: center;
+  padding: 20px 20px 35px;
+}
+
+.titulo h2 {
+  margin: 0;
+  color: #c9a35b;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.titulo p {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 17px;
+}
+
+/* FOTOGRAFIAS */
+
+.galeria {
+  width: 94%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.foto {
+  margin-bottom: 40px;
+  padding: 10px;
+  border: 1px solid #c9a35b;
+  background: #090909;
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+
+.foto:hover img {
+  transform: scale(1.01);
+}
+
+/* PIE */
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 20px;
+  border-top: 1px solid #c9a35b;
+  color: #aaa;
+  font-size: 14px;
+}
+
+footer strong {
+  color: #c9a35b;
+}
+
+/* MOVIL */
+
+@media (max-width: 700px) {
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .titulo h2 {
+    font-size: 27px;
+  }
+
+  .galeria {
+    width: 96%;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <h1>Dulce Nombre de María</h1>
+
+  <p>
+    Hermandad de la Buena Muerte · Jerez de la Frontera
+  </p>
+
+</header>
+
+<nav>
+
+  <a href="index.html">Portada</a>
+
+  <a href="dulce-nombre.html">Dulce Nombre</a>
+
+  <a href="madruga.html">La Madrugá</a>
+
+  <a href="itinerario.html">Itinerario</a>
+
+  <a href="galeria.html">Galería</a>
+
+</nav>
+
+<section class="titulo">
+
+  <h2>El Camino</h2>
+
+  <p>
+    María Santísima del Dulce Nombre durante su recorrido
+  </p>
+
+</section>
+
+<section class="galeria">
+
+  <!-- FOTO 1 -->
+
+  <div class="foto">
+
+    <img
+      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Madrugada%20Viernes%20Santo%202019%20Jerez-P1350775.jpg?width=1600"
+      alt="El Camino - Dulce Nombre de María">
+
+  </div>
+
+
+  <!-- FOTO 2 -->
+
+  <div class="foto">
+
+    <img
+      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Madrugada%20Viernes%20Santo%202019%20Jerez-P1350776.jpg?width=1600"
+      alt="El Camino - Dulce Nombre de María">
+
+  </div>
+
+
+  <!-- FOTO 3 -->
+
+  <div class="foto">
+
+    <img
+      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Madrugada%20Viernes%20Santo%202019%20Jerez-P1350777.jpg?width=1600"
+      alt="El Camino - Dulce Nombre de María">
+
+  </div>
+
+
+  <!-- FOTO 4 -->
+
+  <div class="foto">
+
+    <img
+      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Madrugada%20Viernes%20Santo%202019%20Jerez-P1350778.jpg?width=1600"
+      alt="El Camino - Dulce Nombre de María">
+
+  </div>
+
+</section>
+
+<footer>
+
+  Fotografías: <strong>El Pantera</strong> · Wikimedia Commons · CC BY-SA 4.0
+
+</footer>
+
+</body>
+</html>
