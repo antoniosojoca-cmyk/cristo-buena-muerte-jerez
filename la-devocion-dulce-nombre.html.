@@ -1,214 +1,201 @@
-```html
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-<title>La Devoción — Dulce Nombre de María</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+  <title>La Devoción — Dulce Nombre de María</title>
 
-* {
-  box-sizing: border-box;
-}
+  <style>
 
-body {
-  margin: 0;
-  background: #050505;
-  color: #ffffff;
-  font-family: Georgia, "Times New Roman", serif;
-}
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      margin: 0;
+      background: #080808;
+      color: #ffffff;
+      font-family: Georgia, "Times New Roman", serif;
+    }
 
-/* CABECERA */
+    header {
+      text-align: center;
+      padding: 45px 20px 30px;
+      border-bottom: 1px solid #c9a35b;
+    }
 
-header {
-  text-align: center;
-  padding: 45px 20px 30px;
-  border-bottom: 1px solid #c9a35b;
-}
+    header h1 {
+      margin: 0;
+      color: #c9a35b;
+      font-size: 42px;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
 
-header h1 {
-  margin: 0;
-  color: #c9a35b;
-  font-size: 42px;
-  font-weight: normal;
-  letter-spacing: 2px;
-}
+    header p {
+      margin: 12px 0 0;
+      color: #dddddd;
+      font-size: 18px;
+    }
 
-header p {
-  margin: 10px 0 0;
-  color: #ddd;
-  font-size: 18px;
-}
+    nav {
+      text-align: center;
+      padding: 20px 10px;
+      border-bottom: 1px solid #333333;
+    }
 
+    nav a {
+      color: #c9a35b;
+      text-decoration: none;
+      margin: 0 14px;
+      font-size: 17px;
+      transition: 0.3s;
+    }
 
-/* MENU */
+    nav a:hover {
+      color: #ffffff;
+    }
 
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 20px;
-}
+    .contenido {
+      width: 94%;
+      max-width: 1300px;
+      margin: 45px auto 80px;
+      text-align: center;
+    }
 
-nav a {
-  text-decoration: none;
-  color: #c9a35b;
-  border: 1px solid #c9a35b;
-  padding: 10px 20px;
-  transition: 0.3s;
-}
+    .contenido h2 {
+      color: #c9a35b;
+      font-size: 30px;
+      font-weight: normal;
+      margin: 0 0 12px;
+      letter-spacing: 1px;
+    }
 
-nav a:hover {
-  background: #c9a35b;
-  color: #050505;
-}
+    .contenido .intro {
+      color: #cccccc;
+      font-size: 17px;
+      margin: 0 0 35px;
+    }
 
+    .galeria {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      align-items: center;
+    }
 
-/* TITULO */
+    .foto {
+      width: 100%;
+      background: #050505;
+      border: 1px solid #c9a35b;
+      padding: 10px;
+      box-shadow: 0 0 20px rgba(201, 163, 91, 0.12);
+    }
 
-.titulo {
-  text-align: center;
-  padding: 20px 20px 35px;
-}
+    .foto img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 900px;
+      object-fit: contain;
+      margin: 0 auto;
+    }
 
-.titulo h2 {
-  margin: 0;
-  color: #c9a35b;
-  font-size: 34px;
-  font-weight: normal;
-}
+    .foto:hover {
+      box-shadow: 0 0 30px rgba(201, 163, 91, 0.28);
+    }
 
-.titulo p {
-  margin-top: 10px;
-  color: #ccc;
-  font-size: 17px;
-}
+    .creditos {
+      margin-top: 35px;
+      color: #888888;
+      font-size: 13px;
+      line-height: 1.6;
+    }
 
+    .creditos a {
+      color: #c9a35b;
+    }
 
-/* GALERIA */
+    .musica {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 1px solid #c9a35b;
+      background: #111111;
+      color: #c9a35b;
+      font-size: 22px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 0 15px rgba(201, 163, 91, 0.20);
+    }
 
-.galeria {
-  width: 94%;
-  max-width: 1200px;
-  margin: auto;
-}
+    .musica:hover {
+      background: #c9a35b;
+      color: #080808;
+    }
 
-.foto {
-  margin-bottom: 40px;
-  padding: 10px;
-  border: 1px solid #c9a35b;
-  background: #090909;
-}
+    .youtube {
+      position: fixed;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+      left: -10px;
+      top: -10px;
+    }
 
-.foto img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
+    @media (max-width: 700px) {
 
-.foto:hover img {
-  transform: scale(1.01);
-}
+      header h1 {
+        font-size: 30px;
+      }
 
+      header p {
+        font-size: 15px;
+      }
 
-/* MUSICA */
+      nav a {
+        display: inline-block;
+        margin: 7px 8px;
+        font-size: 15px;
+      }
 
-.musica {
-  position: fixed;
-  top: 18px;
-  right: 18px;
-  z-index: 100;
-}
+      .contenido {
+        width: 96%;
+        margin-top: 30px;
+      }
 
-.musica button {
-  background: rgba(0,0,0,0.78);
-  border: 1px solid #c9a35b;
-  color: #c9a35b;
-  padding: 10px 16px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 2px;
-}
+      .contenido h2 {
+        font-size: 25px;
+      }
 
-.musica button:hover {
-  background: #c9a35b;
-  color: #080808;
-}
+      .foto {
+        padding: 6px;
+      }
 
-.youtube {
-  position: fixed;
-  width: 1px;
-  height: 1px;
-  left: -100px;
-  top: -100px;
-  opacity: 0;
-  pointer-events: none;
-}
+    }
 
-
-/* PIE */
-
-footer {
-  text-align: center;
-  padding: 35px 20px;
-  margin-top: 20px;
-  border-top: 1px solid #333;
-  color: #888;
-  font-size: 14px;
-}
-
-
-/* MOVIL */
-
-@media (max-width: 700px) {
-
-  header h1 {
-    font-size: 30px;
-  }
-
-  header p {
-    font-size: 16px;
-  }
-
-  nav a {
-    width: 100%;
-    text-align: center;
-  }
-
-  .titulo h2 {
-    font-size: 28px;
-  }
-
-  .galeria {
-    width: 96%;
-  }
-
-}
-
-</style>
+  </style>
 
 </head>
+
 
 <body>
 
 
 <header>
 
-  <h1>Dulce Nombre de María</h1>
+  <h1>La Devoción</h1>
 
-  <p>
-    Hermandad de la Buena Muerte · Jerez de la Frontera
-  </p>
+  <p>María Santísima del Dulce Nombre · Jerez de la Frontera</p>
 
 </header>
 
@@ -217,134 +204,144 @@ footer {
 
   <a href="index.html">Portada</a>
 
-  <a href="madruga.html">La Madrugá</a>
-
   <a href="dulce-nombre.html">Dulce Nombre</a>
 
-  <a href="itinerario.html">Itinerario</a>
+  <a href="salida-dulce-nombre.html">La Salida</a>
 
-  <a href="galeria.html">Galería</a>
+  <a href="camino-dulce-nombre.html">El Camino</a>
+
+  <a href="madruga-dulce-nombre.html">La Madrugá</a>
+
+  <a href="la-devocion-dulce-nombre.html">La Devoción</a>
+
+  <a href="la-saeta-dulce-nombre.html">La Saeta</a>
+
+  <a href="el-regreso-dulce-nombre.html">El Regreso</a>
 
 </nav>
 
 
-<section class="titulo">
+<main class="contenido">
 
-  <h2>La Devoción</h2>
+  <h2>María Santísima del Dulce Nombre</h2>
 
-  <p>
-    María Santísima del Dulce Nombre · Jerez de la Frontera
+  <p class="intro">
+    Una mirada a la devoción y a la belleza de María Santísima del Dulce Nombre.
   </p>
 
-</section>
+
+  <section class="galeria">
 
 
-<!-- GALERIA -->
+    <!-- FOTOGRAFÍA 1 -->
 
-<section class="galeria">
+    <div class="foto">
+
+      <img
+        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mar%C3%ADa%20Sant%C3%ADsima%20del%20Dulce%20Nombre%20%28Iglesia%20de%20Santiago%2C%20Jerez%20de%20la%20Frontera%29.jpg?width=1600"
+        alt="María Santísima del Dulce Nombre"
+      >
+
+    </div>
 
 
-  <!-- FOTO 1 -->
+    <!-- FOTOGRAFÍA 2 -->
 
-  <div class="foto">
+    <div class="foto">
 
-    <img
-      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mar%C3%ADa_Sant%C3%ADsima_del_Dulce_Nombre_%28Iglesia_de_Santiago%2C_Jerez_de_la_Frontera%29.jpg?width=1600"
-      alt="María Santísima del Dulce Nombre en la Iglesia de Santiago">
+      <img
+        src="https://www.jerez.es/fileadmin/DesarrolloWeb/ESPECIALES/MAGNA_MARIANA_JEREZ_2024/IMG_Imagineria/MariaDulceNombre.jpg"
+        alt="María Santísima del Dulce Nombre de Jerez"
+      >
+
+    </div>
+
+
+    <!-- FOTOGRAFÍA 3 -->
+
+    <div class="foto">
+
+      <img
+        src="https://i0.wp.com/www.elpertiguero.net/wp-content/uploads/2016/12/ScreenShot004.jpg"
+        alt="María Santísima del Dulce Nombre bajo palio"
+      >
+
+    </div>
+
+
+    <!-- FOTOGRAFÍA 4 -->
+
+    <div class="foto">
+
+      <img
+        src="https://static.grupojoly.com/clip/03e451a9-16da-4db7-8cd0-c927c489cbcf_source-aspect-ratio_1600w_0.jpg"
+        alt="María Santísima del Dulce Nombre en la Madrugada"
+      >
+
+    </div>
+
+
+  </section>
+
+
+  <div class="creditos">
+
+    <p>
+      María Santísima del Dulce Nombre · Hermandad de la Buena Muerte · Jerez de la Frontera
+    </p>
+
+    <p>
+      Fotografía Wikimedia Commons:
+      Jl FilpoC ·
+      <a
+        href="https://creativecommons.org/licenses/by-sa/4.0/"
+        target="_blank"
+      >
+        CC BY-SA 4.0
+      </a>
+    </p>
 
   </div>
 
 
-  <!-- FOTO 2 -->
-
-  <div class="foto">
-
-    <img
-      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Maria_Santisima_del_Dulce_Nombre.jpg?width=1200"
-      alt="María Santísima del Dulce Nombre">
-
-  </div>
+</main>
 
 
-  <!-- FOTO 3 -->
+<!-- MÚSICA -->
 
-  <div class="foto">
-
-    <img
-      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mar%C3%ADa_Sant%C3%ADsima_del_Dulce_Nombre.JPG?width=1400"
-      alt="María Santísima del Dulce Nombre bajo su palio">
-
-  </div>
-
-
-  <!-- FOTO 4 -->
-
-  <div class="foto">
-
-    <img
-      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Buena_Muerte_Jerez.jpg?width=1600"
-      alt="Hermandad de la Buena Muerte de Jerez">
-
-  </div>
+<iframe
+  id="youtube"
+  class="youtube"
+  src="https://www.youtube.com/embed/13eh0OCGaYc?start=315&enablejsapi=1&loop=1&playlist=13eh0OCGaYc"
+  title="Música"
+  allow="autoplay"
+>
+</iframe>
 
 
-</section>
-
-
-<!-- MUSICA -->
-
-<div class="youtube">
-
-  <iframe
-    id="youtubeVideo"
-    width="1"
-    height="1"
-    src="https://www.youtube.com/embed/13eh0OCGaYc?autoplay=1&loop=1&playlist=13eh0OCGaYc&controls=0&rel=0"
-    title="Música - La Devoción"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen>
-  </iframe>
-
-</div>
-
-
-<!-- BOTON MUSICA -->
-
-<div class="musica">
-
-  <button onclick="activarMusica()">
-    ♪ Música
-  </button>
-
-</div>
+<button
+  class="musica"
+  onclick="activarMusica()"
+  title="Activar música"
+>
+  ♪
+</button>
 
 
 <script>
 
-function activarMusica() {
+  function activarMusica() {
 
-  const video =
-    document.getElementById("youtubeVideo");
+    const iframe = document.getElementById("youtube");
 
-  video.src =
-    "https://www.youtube.com/embed/13eh0OCGaYc?autoplay=1&loop=1&playlist=13eh0OCGaYc&controls=0&rel=0";
+    iframe.src =
+      "https://www.youtube.com/embed/13eh0OCGaYc?start=315&autoplay=1&loop=1&playlist=13eh0OCGaYc";
 
-}
+  }
 
 </script>
-
-
-<footer>
-
-  Fotografías: Wikimedia Commons<br><br>
-
-  María Santísima del Dulce Nombre · Jerez de la Frontera
-
-</footer>
 
 
 </body>
 
 </html>
-```
