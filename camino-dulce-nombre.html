@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -24,7 +26,7 @@ body {
 
 header {
   text-align: center;
-  padding: 35px 20px 25px;
+  padding: 45px 20px 30px;
   border-bottom: 1px solid #c9a35b;
 }
 
@@ -41,6 +43,7 @@ header p {
   color: #ddd;
   font-size: 18px;
 }
+
 
 /* MENU */
 
@@ -65,17 +68,18 @@ nav a:hover {
   color: #050505;
 }
 
+
 /* TITULO */
 
 .titulo {
   text-align: center;
-  padding: 20px 20px 35px;
+  padding: 20px 20px 30px;
 }
 
 .titulo h2 {
   margin: 0;
   color: #c9a35b;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: normal;
 }
 
@@ -84,6 +88,37 @@ nav a:hover {
   color: #ccc;
   font-size: 17px;
 }
+
+
+/* ORACION */
+
+.oracion {
+  width: 90%;
+  max-width: 950px;
+  margin: 10px auto 45px;
+  padding: 35px 40px;
+  border-top: 1px solid #c9a35b;
+  border-bottom: 1px solid #c9a35b;
+  text-align: center;
+  background: #090909;
+}
+
+.oracion h3 {
+  margin: 0 0 22px;
+  color: #c9a35b;
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.oracion p {
+  margin: 0;
+  color: #e5e5e5;
+  font-size: 19px;
+  line-height: 1.9;
+  font-style: italic;
+}
+
 
 /* FOTOGRAFIAS */
 
@@ -104,9 +139,8 @@ nav a:hover {
   display: block;
   width: 100%;
   height: auto;
-  max-height: none;
-  object-fit: contain;
   margin: auto;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
@@ -114,20 +148,54 @@ nav a:hover {
   transform: scale(1.01);
 }
 
+
+/* MUSICA */
+
+.musica {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 100;
+}
+
+.musica button {
+  background: rgba(0,0,0,0.78);
+  border: 1px solid #c9a35b;
+  color: #c9a35b;
+  padding: 10px 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.musica button:hover {
+  background: #c9a35b;
+  color: #080808;
+}
+
+.youtube {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  left: -100px;
+  top: -100px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
 /* PIE */
 
 footer {
   text-align: center;
   padding: 35px 20px;
   margin-top: 20px;
-  border-top: 1px solid #c9a35b;
-  color: #aaa;
+  border-top: 1px solid #333;
+  color: #888;
   font-size: 14px;
 }
 
-footer strong {
-  color: #c9a35b;
-}
 
 /* MOVIL */
 
@@ -147,7 +215,16 @@ footer strong {
   }
 
   .titulo h2 {
-    font-size: 27px;
+    font-size: 28px;
+  }
+
+  .oracion {
+    width: 94%;
+    padding: 28px 20px;
+  }
+
+  .oracion p {
+    font-size: 17px;
   }
 
   .galeria {
@@ -157,9 +234,11 @@ footer strong {
 }
 
 </style>
+
 </head>
 
 <body>
+
 
 <header>
 
@@ -171,19 +250,21 @@ footer strong {
 
 </header>
 
+
 <nav>
 
   <a href="index.html">Portada</a>
 
-  <a href="dulce-nombre.html">Dulce Nombre</a>
-
   <a href="madruga.html">La Madrugá</a>
+
+  <a href="dulce-nombre.html">Dulce Nombre</a>
 
   <a href="itinerario.html">Itinerario</a>
 
   <a href="galeria.html">Galería</a>
 
 </nav>
+
 
 <section class="titulo">
 
@@ -195,7 +276,50 @@ footer strong {
 
 </section>
 
+
+<!-- ORACION -->
+
+<section class="oracion">
+
+  <h3>Oración a María Santísima del Dulce Nombre</h3>
+
+  <p>
+
+    Dulce Nombre de María,<br>
+    Madre de los que caminan en silencio,<br>
+    acompaña nuestros pasos<br>
+    cuando la noche se hace larga<br>
+    y el camino parece no tener final.<br><br>
+
+    Camina con nosotros, Madre,<br>
+    bajo la oscuridad de la madrugada,<br>
+    mientras Jerez guarda silencio<br>
+    para contemplar tu rostro.<br><br>
+
+    Que cada lágrima de tus ojos<br>
+    sea consuelo para quien sufre,<br>
+    que cada paso bajo tu palio<br>
+    sea una oración,<br>
+    y que tu Dulce Nombre<br>
+    permanezca siempre en nuestros corazones.<br><br>
+
+    María Santísima del Dulce Nombre,<br>
+    acompáñanos en el camino,<br>
+    protégenos bajo tu manto<br>
+    y llévanos siempre hacia tu Hijo.<br><br>
+
+    <strong>Dulce Nombre de María,<br>
+    ruega por nosotros.</strong>
+
+  </p>
+
+</section>
+
+
+<!-- GALERIA -->
+
 <section class="galeria">
+
 
   <!-- FOTO 1 -->
 
@@ -240,13 +364,63 @@ footer strong {
 
   </div>
 
+
 </section>
+
+
+<!-- MUSICA -->
+
+<div class="youtube">
+
+  <iframe
+    id="youtubeVideo"
+    width="1"
+    height="1"
+    src="https://www.youtube.com/embed/fw7BMYM-IqA?autoplay=1&loop=1&playlist=fw7BMYM-IqA&controls=0&rel=0"
+    title="Marcha procesional - Dulce Nombre"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+
+</div>
+
+
+<!-- BOTON MUSICA -->
+
+<div class="musica">
+
+  <button onclick="activarMusica()">
+    ♪ Música
+  </button>
+
+</div>
+
+
+<script>
+
+function activarMusica() {
+
+  const video =
+    document.getElementById("youtubeVideo");
+
+  video.src =
+    "https://www.youtube.com/embed/fw7BMYM-IqA?autoplay=1&loop=1&playlist=fw7BMYM-IqA&controls=0&rel=0";
+
+}
+
+</script>
+
 
 <footer>
 
-  Fotografías: <strong>El Pantera</strong> · Wikimedia Commons · CC BY-SA 4.0
+  Fotografías: El Pantera · Wikimedia Commons · CC BY-SA 4.0<br><br>
+
+  María Santísima del Dulce Nombre · Jerez de la Frontera
 
 </footer>
 
+
 </body>
+
 </html>
