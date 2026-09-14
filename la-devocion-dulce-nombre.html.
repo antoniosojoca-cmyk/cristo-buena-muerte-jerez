@@ -1,0 +1,350 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La Devoción — Dulce Nombre de María</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #050505;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* CABECERA */
+
+header {
+  text-align: center;
+  padding: 45px 20px 30px;
+  border-bottom: 1px solid #c9a35b;
+}
+
+header h1 {
+  margin: 0;
+  color: #c9a35b;
+  font-size: 42px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin: 10px 0 0;
+  color: #ddd;
+  font-size: 18px;
+}
+
+
+/* MENU */
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c9a35b;
+  border: 1px solid #c9a35b;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #c9a35b;
+  color: #050505;
+}
+
+
+/* TITULO */
+
+.titulo {
+  text-align: center;
+  padding: 20px 20px 35px;
+}
+
+.titulo h2 {
+  margin: 0;
+  color: #c9a35b;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+.titulo p {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 17px;
+}
+
+
+/* GALERIA */
+
+.galeria {
+  width: 94%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.foto {
+  margin-bottom: 40px;
+  padding: 10px;
+  border: 1px solid #c9a35b;
+  background: #090909;
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.foto:hover img {
+  transform: scale(1.01);
+}
+
+
+/* MUSICA */
+
+.musica {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 100;
+}
+
+.musica button {
+  background: rgba(0,0,0,0.78);
+  border: 1px solid #c9a35b;
+  color: #c9a35b;
+  padding: 10px 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.musica button:hover {
+  background: #c9a35b;
+  color: #080808;
+}
+
+.youtube {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  left: -100px;
+  top: -100px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* PIE */
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  color: #888;
+  font-size: 14px;
+}
+
+
+/* MOVIL */
+
+@media (max-width: 700px) {
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .titulo h2 {
+    font-size: 28px;
+  }
+
+  .galeria {
+    width: 96%;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+  <h1>Dulce Nombre de María</h1>
+
+  <p>
+    Hermandad de la Buena Muerte · Jerez de la Frontera
+  </p>
+
+</header>
+
+
+<nav>
+
+  <a href="index.html">Portada</a>
+
+  <a href="madruga.html">La Madrugá</a>
+
+  <a href="dulce-nombre.html">Dulce Nombre</a>
+
+  <a href="itinerario.html">Itinerario</a>
+
+  <a href="galeria.html">Galería</a>
+
+</nav>
+
+
+<section class="titulo">
+
+  <h2>La Devoción</h2>
+
+  <p>
+    María Santísima del Dulce Nombre · Jerez de la Frontera
+  </p>
+
+</section>
+
+
+<!-- GALERIA -->
+
+<section class="galeria">
+
+
+  <!-- FOTO 1 -->
+
+  <div class="foto">
+
+    <img
+      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mar%C3%ADa_Sant%C3%ADsima_del_Dulce_Nombre_%28Iglesia_de_Santiago%2C_Jerez_de_la_Frontera%29.jpg?width=1600"
+      alt="María Santísima del Dulce Nombre en la Iglesia de Santiago">
+
+  </div>
+
+
+  <!-- FOTO 2 -->
+
+  <div class="foto">
+
+    <img
+      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Maria_Santisima_del_Dulce_Nombre.jpg?width=1200"
+      alt="María Santísima del Dulce Nombre">
+
+  </div>
+
+
+  <!-- FOTO 3 -->
+
+  <div class="foto">
+
+    <img
+      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mar%C3%ADa_Sant%C3%ADsima_del_Dulce_Nombre.JPG?width=1400"
+      alt="María Santísima del Dulce Nombre bajo su palio">
+
+  </div>
+
+
+  <!-- FOTO 4 -->
+
+  <div class="foto">
+
+    <img
+      src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Buena_Muerte_Jerez.jpg?width=1600"
+      alt="Hermandad de la Buena Muerte de Jerez">
+
+  </div>
+
+
+</section>
+
+
+<!-- MUSICA -->
+
+<div class="youtube">
+
+  <iframe
+    id="youtubeVideo"
+    width="1"
+    height="1"
+    src="https://www.youtube.com/embed/13eh0OCGaYc?autoplay=1&loop=1&playlist=13eh0OCGaYc&controls=0&rel=0"
+    title="Música - La Devoción"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+
+</div>
+
+
+<!-- BOTON MUSICA -->
+
+<div class="musica">
+
+  <button onclick="activarMusica()">
+    ♪ Música
+  </button>
+
+</div>
+
+
+<script>
+
+function activarMusica() {
+
+  const video =
+    document.getElementById("youtubeVideo");
+
+  video.src =
+    "https://www.youtube.com/embed/13eh0OCGaYc?autoplay=1&loop=1&playlist=13eh0OCGaYc&controls=0&rel=0";
+
+}
+
+</script>
+
+
+<footer>
+
+  Fotografías: Wikimedia Commons<br><br>
+
+  María Santísima del Dulce Nombre · Jerez de la Frontera
+
+</footer>
+
+
+</body>
+
+</html>
+```
