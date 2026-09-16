@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Itinerario — Cristo de la Buena Muerte</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* CABECERA */
+
+header {
+  text-align: center;
+  padding: 55px 20px 35px;
+  border-bottom: 1px solid #c9a35b;
+}
+
+header h1 {
+  margin: 0;
+  color: #c9a35b;
+  font-size: 42px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #dddddd;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+
+/* MENU */
+
+.menu {
+  text-align: center;
+  padding: 22px 10px;
+  border-bottom: 1px solid #333333;
+}
+
+.menu a {
+  color: #c9a35b;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+
+/* TITULO */
+
+.titulo {
+  text-align: center;
+  padding: 45px 20px 20px;
+}
+
+.titulo h2 {
+  color: #c9a35b;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 0 12px;
+  letter-spacing: 1px;
+}
+
+.titulo p {
+  color: #cccccc;
+  font-size: 17px;
+  margin: 0;
+}
+
+
+/* SALAS */
+
+.salas {
+  width: 94%;
+  max-width: 1500px;
+  margin: 35px auto 80px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 35px;
+}
+
+
+/* TARJETA */
+
+.sala {
+  background: #050505;
+  border: 1px solid #c9a35b;
+  padding: 8px;
+  text-align: center;
+
+  box-shadow:
+    0 0 20px rgba(201,163,91,0.10);
+
+  transition: 0.3s;
+}
+
+.sala:hover {
+
+  box-shadow:
+    0 0 30px rgba(201,163,91,0.28);
+
+}
+
+
+/* IMAGEN */
+
+.sala img {
+
+  width: 100%;
+  height: 460px;
+
+  object-fit: contain;
+
+  display: block;
+
+  background: #000000;
+}
+
+
+/* TITULO SALA */
+
+.sala h2 {
+
+  color: #c9a35b;
+
+  font-size: 27px;
+
+  font-weight: normal;
+
+  margin: 20px 10px 22px;
+
+  letter-spacing: 1px;
+}
+
+
+/* ENLACE */
+
+.sala a {
+
+  text-decoration: none;
+}
+
+
+/* PIE */
+
+footer {
+
+  text-align: center;
+
+  padding: 30px;
+
+  border-top: 1px solid #333333;
+
+  color: #888888;
+
+  font-size: 13px;
+}
+
+
+/* MOVIL */
+
+@media (max-width: 800px) {
+
+  .salas {
+
+    grid-template-columns: 1fr;
+
+    width: 94%;
+  }
+
+  header h1 {
+
+    font-size: 32px;
+  }
+
+  .titulo h2 {
+
+    font-size: 27px;
+  }
+
+  .sala img {
+
+    height: 400px;
+  }
+
+  .menu a {
+
+    display: inline-block;
+
+    margin: 7px 8px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- CABECERA -->
+
+<header>
+
+  <h1>Itinerario</h1>
+
+  <p>
+    Cristo de la Buena Muerte · Jerez de la Frontera
+  </p>
+
+</header>
+
+
+<!-- MENU PRINCIPAL -->
+
+<nav class="menu">
+
+  <a href="index.html">Portada</a>
+
+  <a href="madruga.html">La Madrugá</a>
+
+  <a href="dulce-nombre.html">Dulce Nombre</a>
+
+  <a href="itinerario.html">Itinerario</a>
+
+  <a href="galeria.html">Galería</a>
+
+</nav>
+
+
+<!-- TITULO -->
+
+<section class="titulo">
+
+  <h2>El Camino de la Madrugá</h2>
+
+  <p>
+    Seis lugares, seis momentos del recorrido de la Hermandad de la Buena Muerte.
+  </p>
+
+</section>
+
+
+<!-- SEIS SALAS -->
+
+<section class="salas">
+
+
+  <!-- SANTIAGO -->
+
+  <div class="sala">
+
+    <a href="santiago-itinerario.html">
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Iglesia_de_Santiago_Jerez_de_la_Frontera.jpg/1280px-Iglesia_de_Santiago_Jerez_de_la_Frontera.jpg"
+        alt="Santiago"
+      >
+
+      <h2>Santiago</h2>
+
+    </a>
+
+  </div>
+
+
+  <!-- POLVERA -->
+
+  <div class="sala">
+
+    <a href="polvera-itinerario.html">
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Jerez_de_la_Frontera_-_Calle_Porvera.jpg/1280px-Jerez_de_la_Frontera_-_Calle_Porvera.jpg"
+        alt="Polvera"
+      >
+
+      <h2>Polvera</h2>
+
+    </a>
+
+  </div>
+
+
+  <!-- CARRERA OFICIAL -->
+
+  <div class="sala">
+
+    <a href="carrera-oficial-itinerario.html">
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Jerez_de_la_Frontera_calle_Larga.jpg/1280px-Jerez_de_la_Frontera_calle_Larga.jpg"
+        alt="Carrera Oficial"
+      >
+
+      <h2>Carrera Oficial</h2>
+
+    </a>
+
+  </div>
+
+
+  <!-- CATEDRAL -->
+
+  <div class="sala">
+
+    <a href="catedral-itinerario.html">
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Catedral_de_Jerez_de_la_Frontera.jpg/1280px-Catedral_de_Jerez_de_la_Frontera.jpg"
+        alt="Catedral de Jerez"
+      >
+
+      <h2>Catedral</h2>
+
+    </a>
+
+  </div>
+
+
+  <!-- TONELERÍA -->
+
+  <div class="sala">
+
+    <a href="toneleria-itinerario.html">
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Jerez_de_la_Frontera_-_Calle_Torneria.jpg/1280px-Jerez_de_la_Frontera_-_Calle_Torneria.jpg"
+        alt="Tonelería"
+      >
+
+      <h2>Tonelería</h2>
+
+    </a>
+
+  </div>
+
+
+  <!-- RECOGIDA -->
+
+  <div class="sala">
+
+    <a href="recogida-itinerario.html">
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Iglesia_de_Santiago_Jerez_de_la_Frontera.jpg/1280px-Iglesia_de_Santiago_Jerez_de_la_Frontera.jpg"
+        alt="Recogida en Santiago"
+      >
+
+      <h2>Recogida</h2>
+
+    </a>
+
+  </div>
+
+
+</section>
+
+
+<footer>
+
+  Cristo de la Buena Muerte · Jerez de la Frontera
+
+</footer>
+
+
+</body>
+
+</html>
