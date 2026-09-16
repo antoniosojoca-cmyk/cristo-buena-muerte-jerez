@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Santiago — Itinerario · Cristo de la Buena Muerte</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* CABECERA */
+
+header {
+  text-align: center;
+  padding: 55px 20px 35px;
+  border-bottom: 1px solid #c9a35b;
+}
+
+header h1 {
+  margin: 0;
+  color: #c9a35b;
+  font-size: 42px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #dddddd;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+
+/* MENU */
+
+.menu {
+  text-align: center;
+  padding: 22px 10px;
+  border-bottom: 1px solid #333333;
+}
+
+.menu a {
+  color: #c9a35b;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+
+/* TITULO */
+
+.titulo {
+  text-align: center;
+  padding: 45px 20px 25px;
+}
+
+.titulo h2 {
+  color: #c9a35b;
+  font-size: 34px;
+  font-weight: normal;
+  margin: 0 0 12px;
+  letter-spacing: 1px;
+}
+
+.titulo p {
+  color: #cccccc;
+  font-size: 17px;
+  margin: 0;
+}
+
+
+/* GALERIA */
+
+.galeria {
+  width: 92%;
+  max-width: 1200px;
+  margin: 30px auto 70px;
+}
+
+.galeria img {
+
+  width: 100%;
+
+  max-height: 850px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin: 0 auto 35px;
+
+  background: #050505;
+
+  border: 1px solid #c9a35b;
+
+  padding: 6px;
+
+  transition: 0.3s;
+}
+
+.galeria img:hover {
+
+  transform: scale(1.01);
+
+}
+
+
+/* MUSICA */
+
+.musica {
+
+  position: fixed;
+
+  bottom: 25px;
+
+  right: 25px;
+
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 50%;
+
+  border: 1px solid #c9a35b;
+
+  background: #080808;
+
+  color: #c9a35b;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+  z-index: 1000;
+
+  box-shadow: 0 0 15px rgba(201,163,91,0.25);
+}
+
+.musica:hover {
+
+  background: #c9a35b;
+
+  color: #080808;
+
+}
+
+
+/* YOUTUBE OCULTO */
+
+.youtube {
+
+  position: fixed;
+
+  width: 1px;
+
+  height: 1px;
+
+  left: -100px;
+
+  top: -100px;
+
+  opacity: 0;
+
+}
+
+
+/* ATRIBUCION */
+
+.creditos {
+
+  text-align: center;
+
+  color: #777777;
+
+  font-size: 12px;
+
+  margin: 20px auto 45px;
+
+  width: 90%;
+}
+
+
+/* PIE */
+
+footer {
+
+  text-align: center;
+
+  padding: 30px;
+
+  border-top: 1px solid #333333;
+
+  color: #888888;
+
+  font-size: 13px;
+}
+
+
+/* MOVIL */
+
+@media (max-width: 800px) {
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .titulo h2 {
+    font-size: 28px;
+  }
+
+  .galeria {
+    width: 95%;
+  }
+
+  .galeria img {
+    max-height: 700px;
+  }
+
+  .menu a {
+    display: inline-block;
+    margin: 7px 8px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- CABECERA -->
+
+<header>
+
+  <h1>Santiago</h1>
+
+  <p>
+    Cristo de la Buena Muerte · Jerez de la Frontera
+  </p>
+
+</header>
+
+
+<!-- MENU -->
+
+<nav class="menu">
+
+  <a href="index.html">Portada</a>
+
+  <a href="madruga.html">La Madrugá</a>
+
+  <a href="dulce-nombre.html">Dulce Nombre</a>
+
+  <a href="itinerario.html">Itinerario</a>
+
+  <a href="galeria.html">Galería</a>
+
+</nav>
+
+
+<!-- TITULO -->
+
+<section class="titulo">
+
+  <h2>Santiago</h2>
+
+  <p>
+    El templo y el entorno donde comienza y termina el camino de la Buena Muerte.
+  </p>
+
+</section>
+
+
+<!-- CUATRO IMAGENES -->
+
+<section class="galeria">
+
+
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Madrugada_Viernes_Santo_2019_Jerez-P1350763.jpg"
+    alt="Hermandad de la Buena Muerte en Jerez"
+  >
+
+
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Madrugada_Viernes_Santo_2019_Jerez-P1350765.jpg"
+    alt="Hermandad de la Buena Muerte en Jerez"
+  >
+
+
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Santiago-Jerez_IMG_20190816_211326_029.jpg"
+    alt="Interior de la Iglesia de Santiago de Jerez"
+  >
+
+
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Santiago-Jerez_IMG_20190816_211514_132.jpg"
+    alt="Interior de la Iglesia de Santiago de Jerez"
+  >
+
+
+</section>
+
+
+<!-- CREDITOS -->
+
+<div class="creditos">
+
+  Fotografías: El Pantera · Wikimedia Commons · CC BY-SA 4.0
+
+</div>
+
+
+<!-- BOTON MUSICA -->
+
+<button class="musica" onclick="activarMusica()" title="Música">
+
+  ♪
+
+</button>
+
+
+<!-- YOUTUBE OCULTO -->
+
+<iframe
+  id="youtube"
+  class="youtube"
+  src="https://www.youtube.com/embed?listType=playlist&list=PLFEnn-RBdvGgiTuOFmAjZK4FS6zy9utTe&autoplay=1"
+  allow="autoplay"
+  frameborder="0">
+</iframe>
+
+
+<!-- PIE -->
+
+<footer>
+
+  Cristo de la Buena Muerte · Jerez de la Frontera
+
+</footer>
+
+
+<script>
+
+function activarMusica() {
+
+  const iframe = document.getElementById("youtube");
+
+  iframe.src =
+    "https://www.youtube.com/embed?listType=playlist&list=PLFEnn-RBdvGgiTuOFmAjZK4FS6zy9utTe&autoplay=1";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
