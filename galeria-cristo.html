@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,7 +22,6 @@ body {
   font-family: Georgia, "Times New Roman", serif;
 }
 
-
 /* CABECERA */
 
 header {
@@ -44,7 +44,6 @@ header p {
   margin-top: 12px;
 }
 
-
 /* MENU */
 
 .menu {
@@ -64,7 +63,6 @@ header p {
 .menu a:hover {
   color: #ffffff;
 }
-
 
 /* TITULO */
 
@@ -87,7 +85,6 @@ header p {
   margin: 0;
 }
 
-
 /* GALERIA */
 
 .galeria {
@@ -96,22 +93,26 @@ header p {
   margin: 30px auto 70px;
 }
 
+/* MARCO DORADO */
+
 .galeria img {
   width: 100%;
-  max-height: 850px;
-  object-fit: contain;
+  height: 720px;
+  object-fit: cover;
+  object-position: center;
   display: block;
-  margin: 0 auto 35px;
+  margin: 0 auto 40px;
   background: #050505;
-  border: 1px solid #c9a35b;
-  padding: 6px;
+  border: 2px solid #c9a35b;
+  padding: 0;
   transition: .3s;
 }
+
+/* PEQUEÑO EFECTO AL PASAR EL RATON */
 
 .galeria img:hover {
   transform: scale(1.01);
 }
-
 
 /* CREDITOS */
 
@@ -123,7 +124,6 @@ header p {
   width: 90%;
 }
 
-
 /* PIE */
 
 footer {
@@ -133,7 +133,6 @@ footer {
   color: #888888;
   font-size: 13px;
 }
-
 
 /* MOVIL */
 
@@ -152,7 +151,7 @@ footer {
   }
 
   .galeria img {
-    max-height: 700px;
+    height: 600px;
   }
 
   .menu a {
@@ -166,98 +165,88 @@ footer {
 
 </head>
 
-
 <body>
-
-
-<!-- CABECERA -->
 
 <header>
 
-  <h1>Galería</h1>
+<h1>Galería</h1>
 
-  <p>
-    Cristo de la Buena Muerte · Jerez de la Frontera
-  </p>
+<p>
+Cristo de la Buena Muerte · Jerez de la Frontera
+</p>
 
 </header>
 
 
-<!-- MENU -->
-
 <nav class="menu">
 
-  <a href="index.html">Portada</a>
+<a href="index.html">Portada</a>
 
-  <a href="madruga.html">La Madrugá</a>
+<a href="madruga.html">La Madrugá</a>
 
-  <a href="dulce-nombre.html">Dulce Nombre</a>
+<a href="dulce-nombre.html">Dulce Nombre</a>
 
-  <a href="itinerario.html">Itinerario</a>
+<a href="itinerario.html">Itinerario</a>
 
-  <a href="galeria.html">Galería</a>
+<a href="galeria.html">Galería</a>
 
 </nav>
 
 
-<!-- TITULO -->
-
 <section class="titulo">
 
-  <h2>Cristo de la Buena Muerte</h2>
+<h2>Cristo de la Buena Muerte</h2>
 
-  <p>
-    Seis miradas al Señor de Santiago
-  </p>
+<p>
+Seis miradas al Señor de Santiago
+</p>
 
 </section>
 
 
-<!-- SEIS FOTOGRAFIAS -->
-
 <section class="galeria">
 
 
-  <!-- IMAGEN 1 · CRISTO EN LA CALLE -->
+<!-- 1 -->
 
-  <img
-    src="https://www.turismojerez.com/fileadmin/_migrated/pics/10g.jpg"
-    alt="Cristo de la Buena Muerte durante la procesión en Jerez">
-
-
-  <!-- IMAGEN 2 · CRISTO EN SANTIAGO -->
-
-  <img
-    src="https://www.soyjerez.com/wp-content/uploads/2020/06/cristo-buena-muerte.jpg"
-    alt="Santísimo Cristo de la Buena Muerte de Jerez">
+<img
+src="https://www.soyjerez.com/wp-content/uploads/2020/06/cristo-buena-muerte.jpg"
+alt="Santísimo Cristo de la Buena Muerte de Jerez">
 
 
-  <!-- IMAGEN 3 · CRISTO EN SU PASO -->
+<!-- 2 -->
 
-  <img
-    src="https://static.grupojoly.com/clip/8363eb48-49ce-4dd4-af30-c30e1aa88f0f_source-aspect-ratio_1600w_0.jpg"
-    alt="Cristo de la Buena Muerte en su paso procesional">
-
-
-  <!-- IMAGEN 4 · CRISTO DURANTE LA MADRUGADA -->
-
-  <img
-    src="https://static.grupojoly.com/clip/6cf6e806-3261-4aaf-8fcd-b68f8ca86b09_source-aspect-ratio_1600w_0.jpg"
-    alt="Santísimo Cristo de la Buena Muerte durante la Madrugada">
+<img
+src="https://www.turismojerez.com/fileadmin/_migrated/pics/10g.jpg"
+alt="Cristo de la Buena Muerte durante la Madrugada de Jerez">
 
 
-  <!-- IMAGEN 5 · CRISTO EN LA PROCESION -->
+<!-- 3 -->
 
-  <img
-    src="https://www.andaluciainformacion.es/asset/thumbnail%2C1280%2C720%2Ccenter%2Ccenter/media/andaluciainformacion/images/2024/03/28/2024032810560101614804.jpg"
-    alt="Cristo de la Buena Muerte en las calles de Jerez">
+<img
+src="https://static.grupojoly.com/clip/8363eb48-49ce-4dd4-af30-c30e1aa88f0f_source-aspect-ratio_1600w_0.jpg"
+alt="Cristo de la Buena Muerte en su paso procesional">
 
 
-  <!-- IMAGEN 6 · CRISTO Y AMBIENTE DE LA MADRUGADA -->
+<!-- 4 -->
 
-  <img
-    src="https://static.grupojoly.com/clip/c82a707a-93b3-4cfc-9608-66c1070fefb9_source-aspect-ratio_1600w_0.jpg"
-    alt="Paso de la Buena Muerte en la Plaza de la Asunción">
+<img
+src="https://www.lavozdelsur.es/uploads/s1/25/52/70/2/la-buena-muerte-4.jpeg"
+alt="Cristo de la Buena Muerte por las calles de Jerez">
+
+
+<!-- 5 -->
+
+<img
+src="https://static.grupojoly.com/clip/5c237478-8e41-4f5f-8b0b-7c6a9f2c84a4_16-9-aspect-ratio_1600w_0.jpg"
+alt="Cristo de la Buena Muerte durante la Madrugada de Jerez">
+
+
+<!-- 6 -->
+
+<img
+src="https://static.grupojoly.com/clip/6cf6e806-3261-4aaf-8fcd-b68f8ca86b09_source-aspect-ratio_1600w_0.jpg"
+alt="Cristo de la Buena Muerte en el interior de Santiago">
 
 
 </section>
@@ -265,17 +254,17 @@ footer {
 
 <div class="creditos">
 
-  Fotografías: Turismo de Jerez · SoyJerez · Diario de Jerez · Andalucía Información
+Fotografías:
+SoyJerez · Turismo de Jerez · Diario de Jerez · La Voz del Sur
 
 </div>
 
 
 <footer>
 
-  Cristo de la Buena Muerte · Jerez de la Frontera
+Cristo de la Buena Muerte · Jerez de la Frontera
 
 </footer>
-
 
 </body>
 
