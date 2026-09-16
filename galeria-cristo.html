@@ -93,7 +93,7 @@ header p {
   margin: 30px auto 70px;
 }
 
-/* MARCO DORADO */
+/* FOTOGRAFIAS */
 
 .galeria img {
   width: 100%;
@@ -107,8 +107,6 @@ header p {
   padding: 0;
   transition: .3s;
 }
-
-/* PEQUEÑO EFECTO AL PASAR EL RATON */
 
 .galeria img:hover {
   transform: scale(1.01);
@@ -132,6 +130,48 @@ footer {
   border-top: 1px solid #333333;
   color: #888888;
   font-size: 13px;
+}
+
+/* BOTON MUSICA */
+
+.musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #c9a35b;
+  color: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(201,163,91,0.45);
+  transition: .3s;
+}
+
+.musica:hover {
+  transform: scale(1.08);
+}
+
+/* YOUTUBE OCULTO */
+
+.youtube {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.youtube iframe {
+  width: 1px;
+  height: 1px;
+  border: 0;
 }
 
 /* MOVIL */
@@ -166,6 +206,7 @@ footer {
 </head>
 
 <body>
+
 
 <header>
 
@@ -207,47 +248,46 @@ Seis miradas al Señor de Santiago
 <section class="galeria">
 
 
-<!-- 1 -->
+<!-- FOTOGRAFIA 1 -->
 
 <img
 src="https://www.soyjerez.com/wp-content/uploads/2020/06/cristo-buena-muerte.jpg"
 alt="Santísimo Cristo de la Buena Muerte de Jerez">
 
 
-<!-- 2 -->
+<!-- FOTOGRAFIA 2 -->
 
 <img
-src="https://www.lapasionenjerez.com/wp-content/uploads/2017/11/Santisimo-Cristo-de-la-Buena-Muerte-750x536.jpg"
+src="https://www.turismojerez.com/fileadmin/_migrated/pics/10g.jpg"
 alt="Cristo de la Buena Muerte durante la Madrugada de Jerez">
 
 
-<!-- 3 -->
+<!-- FOTOGRAFIA 3 -->
 
 <img
 src="https://static.grupojoly.com/clip/8363eb48-49ce-4dd4-af30-c30e1aa88f0f_source-aspect-ratio_1600w_0.jpg"
 alt="Cristo de la Buena Muerte en su paso procesional">
 
 
-<!-- 4 -->
+<!-- FOTOGRAFIA 4 -->
 
 <img
-src="https://islapasion.net/wp-content/uploads/old_web_images/07112018084825000000-1018x682.jpg"
+src="https://static.grupojoly.com/clip/e1f5992e-d6c2-4e1d-81e9-09596e055595_source-aspect-ratio_1600w_0.jpg"
 alt="Cristo de la Buena Muerte de Jerez durante la Semana Santa">
-  
 
 
-<!-- 5 -->
+<!-- FOTOGRAFIA 5 -->
 
 <img
 src="https://static.grupojoly.com/clip/5c237478-8e41-4f5f-8b0b-7c6a9f2c84a4_16-9-aspect-ratio_1600w_0.jpg"
 alt="Cristo de la Buena Muerte durante la Madrugada de Jerez">
 
 
-<!-- 6 -->
+<!-- FOTOGRAFIA 6 -->
 
 <img
 src="https://static.grupojoly.com/clip/6cf6e806-3261-4aaf-8fcd-b68f8ca86b09_source-aspect-ratio_1600w_0.jpg"
-alt="Cristo de la Buena Muerte en el interior de Santiago">
+alt="Cristo de la Buena Muerte en Jerez">
 
 
 </section>
@@ -256,7 +296,7 @@ alt="Cristo de la Buena Muerte en el interior de Santiago">
 <div class="creditos">
 
 Fotografías:
-SoyJerez · Turismo de Jerez · Diario de Jerez · La Voz del Sur
+SoyJerez · Turismo de Jerez · Diario de Jerez
 
 </div>
 
@@ -266,6 +306,44 @@ SoyJerez · Turismo de Jerez · Diario de Jerez · La Voz del Sur
 Cristo de la Buena Muerte · Jerez de la Frontera
 
 </footer>
+
+
+<!-- BOTON DE MUSICA -->
+
+<div class="musica" id="botonMusica">
+♪ 
+</div>
+
+
+<!-- YOUTUBE -->
+
+<div class="youtube">
+
+<iframe
+id="reproductor"
+src="https://www.youtube.com/embed/GCuDBo4F-Ac?start=2938&autoplay=1&enablejsapi=1"
+allow="autoplay">
+</iframe>
+
+</div>
+
+
+<script>
+
+const boton = document.getElementById("botonMusica");
+const reproductor = document.getElementById("reproductor");
+
+boton.addEventListener("click", function() {
+
+  reproductor.contentWindow.postMessage(
+    '{"event":"command","func":"playVideo","args":""}',
+    "*"
+  );
+
+});
+
+</script>
+
 
 </body>
 
