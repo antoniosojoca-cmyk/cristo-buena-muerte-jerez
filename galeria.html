@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Galería — Cristo de la Buena Muerte</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* CABECERA */
+
+header {
+  text-align: center;
+  padding: 55px 20px 35px;
+  border-bottom: 1px solid #c9a35b;
+}
+
+header h1 {
+  margin: 0;
+  color: #c9a35b;
+  font-size: 42px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #dddddd;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+
+/* MENU PRINCIPAL */
+
+.menu {
+  text-align: center;
+  padding: 22px 10px;
+  border-bottom: 1px solid #333333;
+}
+
+.menu a {
+  color: #c9a35b;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 17px;
+  transition: .3s;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+
+/* TITULO */
+
+.titulo {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.titulo h2 {
+  color: #c9a35b;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0 0 14px;
+  letter-spacing: 1px;
+}
+
+.titulo p {
+  color: #cccccc;
+  font-size: 17px;
+  margin: 0;
+}
+
+
+/* SALAS */
+
+.salas {
+  width: 94%;
+  max-width: 1500px;
+  margin: 30px auto 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+
+/* TARJETAS */
+
+.sala {
+  background: #050505;
+  border: 1px solid #c9a35b;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  transition: .3s;
+}
+
+.sala:hover {
+  border-color: #ffffff;
+}
+
+.sala img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  display: block;
+}
+
+.sala h3 {
+  color: #c9a35b;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 18px 10px 8px;
+}
+
+.sala p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0 10px 20px;
+}
+
+
+/* PIE */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #333333;
+  color: #888888;
+  font-size: 13px;
+}
+
+
+/* MOVIL */
+
+@media(max-width:800px) {
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .titulo h2 {
+    font-size: 29px;
+  }
+
+  .salas {
+    width: 95%;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .sala img {
+    height: 400px;
+  }
+
+  .menu a {
+    display: inline-block;
+    margin: 7px 8px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- CABECERA -->
+
+<header>
+
+  <h1>Galería</h1>
+
+  <p>
+    Cristo de la Buena Muerte · Jerez de la Frontera
+  </p>
+
+</header>
+
+
+<!-- MENU PRINCIPAL -->
+
+<nav class="menu">
+
+  <a href="index.html">Portada</a>
+
+  <a href="madruga.html">La Madrugá</a>
+
+  <a href="dulce-nombre.html">Dulce Nombre</a>
+
+  <a href="itinerario.html">Itinerario</a>
+
+  <a href="galeria.html">Galería</a>
+
+</nav>
+
+
+<!-- TITULO -->
+
+<section class="titulo">
+
+  <h2>Galería</h2>
+
+  <p>
+    Imágenes de la Buena Muerte y su Hermandad
+  </p>
+
+</section>
+
+
+<!-- CUATRO SALAS -->
+
+<section class="salas">
+
+
+  <!-- SALA 1 -->
+
+  <a class="sala" href="galeria-cristo.html">
+
+    <img
+      src="https://static.grupojoly.com/clip/4b2a536b-dc15-486c-8c3b-7988a59e40bb_source-aspect-ratio_1600w_0.jpg"
+      alt="Santísimo Cristo de la Buena Muerte">
+
+    <h3>Cristo de la Buena Muerte</h3>
+
+    <p>
+      El Señor de Santiago
+    </p>
+
+  </a>
+
+
+  <!-- SALA 2 -->
+
+  <a class="sala" href="galeria-dulce-nombre.html">
+
+    <img
+      src="https://static.grupojoly.com/clip/1aca5a54-a2e9-4650-9f06-da662e1c0612_source-aspect-ratio_1600w_0.jpg"
+      alt="María Santísima del Dulce Nombre">
+
+    <h3>Dulce Nombre</h3>
+
+    <p>
+      María Santísima del Dulce Nombre
+    </p>
+
+  </a>
+
+
+  <!-- SALA 3 -->
+
+  <a class="sala" href="galeria-nazarenos.html">
+
+    <img
+      src="https://static.grupojoly.com/clip/c82a707a-93b3-4cfc-9608-66c1070fefb9_source-aspect-ratio_1600w_0.jpg"
+      alt="Nazarenos de la Buena Muerte">
+
+    <h3>Nazarenos</h3>
+
+    <p>
+      El cortejo de la Hermandad
+    </p>
+
+  </a>
+
+
+  <!-- SALA 4 -->
+
+  <a class="sala" href="galeria-devocion.html">
+
+    <img
+      src="https://static.grupojoly.com/clip/37901f8c-24d6-4514-aac5-1b5fe1564b38_source-aspect-ratio_1600w_0.jpg"
+      alt="Devoción a la Buena Muerte">
+
+    <h3>Devoción</h3>
+
+    <p>
+      Fe, oración y recogimiento
+    </p>
+
+  </a>
+
+
+</section>
+
+
+<!-- PIE -->
+
+<footer>
+
+  Cristo de la Buena Muerte · Jerez de la Frontera
+
+</footer>
+
+
+</body>
+
+</html>
