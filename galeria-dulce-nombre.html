@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dulce Nombre — Galería</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* CABECERA */
+
+header {
+  text-align: center;
+  padding: 55px 20px 35px;
+  border-bottom: 1px solid #c9a35b;
+}
+
+header h1 {
+  margin: 0;
+  color: #c9a35b;
+  font-size: 42px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #dddddd;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+/* MENU */
+
+.menu {
+  text-align: center;
+  padding: 22px 10px;
+  border-bottom: 1px solid #333333;
+}
+
+.menu a {
+  color: #c9a35b;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 17px;
+  transition: .3s;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+/* TITULO */
+
+.titulo {
+  text-align: center;
+  padding: 45px 20px 25px;
+}
+
+.titulo h2 {
+  color: #c9a35b;
+  font-size: 34px;
+  font-weight: normal;
+  margin: 0 0 12px;
+  letter-spacing: 1px;
+}
+
+.titulo p {
+  color: #cccccc;
+  font-size: 17px;
+  margin: 0;
+}
+
+/* GALERIA */
+
+.galeria {
+  width: 92%;
+  max-width: 1200px;
+  margin: 30px auto 70px;
+}
+
+/* FOTOGRAFIAS */
+
+.galeria img {
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto 40px;
+  background: #050505;
+  border: 2px solid #c9a35b;
+  padding: 0;
+  transition: .3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.01);
+}
+
+/* CREDITOS */
+
+.creditos {
+  text-align: center;
+  color: #777777;
+  font-size: 12px;
+  margin: 20px auto 45px;
+  width: 90%;
+}
+
+/* PIE */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #333333;
+  color: #888888;
+  font-size: 13px;
+}
+
+/* BOTON MUSICA */
+
+.musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #c9a35b;
+  color: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(201,163,91,0.45);
+  transition: .3s;
+}
+
+.musica:hover {
+  transform: scale(1.08);
+}
+
+/* YOUTUBE OCULTO */
+
+.youtube {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.youtube iframe {
+  width: 1px;
+  height: 1px;
+  border: 0;
+}
+
+/* MOVIL */
+
+@media(max-width:800px) {
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .titulo h2 {
+    font-size: 28px;
+  }
+
+  .galeria {
+    width: 95%;
+  }
+
+  .galeria img {
+    height: 600px;
+  }
+
+  .menu a {
+    display: inline-block;
+    margin: 7px 8px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<h1>Galería</h1>
+
+<p>
+Cristo de la Buena Muerte · Jerez de la Frontera
+</p>
+
+</header>
+
+
+<nav class="menu">
+
+<a href="index.html">Portada</a>
+
+<a href="madruga.html">La Madrugá</a>
+
+<a href="dulce-nombre.html">Dulce Nombre</a>
+
+<a href="itinerario.html">Itinerario</a>
+
+<a href="galeria.html">Galería</a>
+
+</nav>
+
+
+<section class="titulo">
+
+<h2>María Santísima del Dulce Nombre</h2>
+
+<p>
+Seis miradas a la Reina de Santiago
+</p>
+
+</section>
+
+
+<section class="galeria">
+
+
+<!-- FOTOGRAFIA 1 -->
+
+<img
+src="https://www.jerez.es/fileadmin/DesarrolloWeb/ESPECIALES/MAGNA_MARIANA_JEREZ_2024/IMG_Imagineria/MariaDulceNombre.jpg"
+alt="María Santísima del Dulce Nombre de Jerez">
+
+
+<!-- FOTOGRAFIA 2 -->
+
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mar%C3%ADa_Sant%C3%ADsima_del_Dulce_Nombre_%28Iglesia_de_Santiago%2C_Jerez_de_la_Frontera%29.jpg"
+alt="María Santísima del Dulce Nombre en la Iglesia de Santiago de Jerez">
+
+
+<!-- FOTOGRAFIA 3 -->
+
+<img
+src="https://i0.wp.com/www.elpertiguero.net/wp-content/uploads/2016/12/ScreenShot004.jpg"
+alt="María Santísima del Dulce Nombre bajo palio en Jerez">
+
+
+<!-- FOTOGRAFIA 4 -->
+
+<img
+src="https://www.lavozdelsur.es/uploads/s1/33/50/47/1/costaleras-buena-muerte-dulce-nombre-16_18_1200x689.jpeg"
+alt="Paso de palio del Dulce Nombre de Jerez">
+
+
+<!-- FOTOGRAFIA 5 -->
+
+<img
+src="https://www.andaluciainformacion.es/asset/thumbnail%2C1160%2C740%2Ccenter%2Ccenter/media/andaluciainformacion/images/2026/03/01/2026030120321817744.jpg"
+alt="María Santísima del Dulce Nombre en Jerez">
+
+
+<!-- FOTOGRAFIA 6 -->
+
+<img
+src="https://4.bp.blogspot.com/-4BilZz_uS60/UkUqQOr9J2I/AAAAAAAAB-0/UaYjFXlbsaA/s1600/V%C3%ADa%2BLucis%2Bde%2BJerez%2B2013%2B%281%29.jpg"
+alt="María Santísima del Dulce Nombre en el Vía Lucis de Jerez">
+
+
+</section>
+
+
+<div class="creditos">
+
+Fotografías:
+Ayuntamiento de Jerez · Wikimedia Commons · El Pertiguero · La Voz del Sur · Andalucía Información · Fotografías de Bandera
+
+</div>
+
+
+<footer>
+
+María Santísima del Dulce Nombre · Jerez de la Frontera
+
+</footer>
+
+
+<!-- BOTON DE MUSICA -->
+
+<div class="musica" id="botonMusica">
+♪
+</div>
+
+
+<!-- YOUTUBE OCULTO -->
+
+<div class="youtube">
+
+<iframe
+id="reproductor"
+src="https://www.youtube.com/embed/?autoplay=0&enablejsapi=1"
+allow="autoplay">
+</iframe>
+
+</div>
+
+
+<script>
+
+const boton = document.getElementById("botonMusica");
+
+boton.addEventListener("click", function() {
+
+  const url = "https://www.youtube.com/watch?v=GCuDBo4F-Ac";
+
+  window.open(url, "_blank");
+
+});
+
+</script>
+
+
+</body>
+
+</html>
