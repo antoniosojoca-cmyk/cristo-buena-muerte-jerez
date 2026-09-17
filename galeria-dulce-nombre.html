@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -159,9 +160,11 @@ footer {
 /* YOUTUBE OCULTO */
 
 .youtube {
-  position: absolute;
+  position: fixed;
   width: 1px;
   height: 1px;
+  left: -100px;
+  top: -100px;
   overflow: hidden;
   opacity: 0;
   pointer-events: none;
@@ -257,8 +260,7 @@ alt="María Santísima del Dulce Nombre de Jerez">
 <!-- FOTOGRAFIA 2 -->
 
 <img
-src="https://www.lapasionenjerez.com/wp-content/uploads/2017/09/Maria-Santisima-del-Dulce-Nombre-750x536.jpg"
-  
+src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mar%C3%ADa_Sant%C3%ADsima_del_Dulce_Nombre_%28Iglesia_de_Santiago%2C_Jerez_de_la_Frontera%29.jpg"
 alt="María Santísima del Dulce Nombre en la Iglesia de Santiago de Jerez">
 
 
@@ -272,7 +274,7 @@ alt="María Santísima del Dulce Nombre bajo palio en Jerez">
 <!-- FOTOGRAFIA 4 -->
 
 <img
-src="https://exaltaciontarancon.wordpress.com/wp-content/uploads/2013/03/dulce-nombre-jerez-de-la-frontera.jpg"
+src="https://www.lavozdelsur.es/uploads/s1/33/50/47/1/costaleras-buena-muerte-dulce-nombre-16_18_1200x689.jpeg"
 alt="Paso de palio del Dulce Nombre de Jerez">
 
 
@@ -286,9 +288,8 @@ alt="María Santísima del Dulce Nombre en Jerez">
 <!-- FOTOGRAFIA 6 -->
 
 <img
-src="https://masjerez.com/storage/noticias/May2020/JvyizKZb8topeAxuTEto.jpg"
-  
-alt="María Santísima del Dulce Nombre en el Vía Lucis de Jerez">
+src="https://4.bp.blogspot.com/-4BilZz_uS60/UkUqQOr9J2I/AAAAAAAAB-0/UaYjFXlbsaA/s1600/V%C3%ADa%2BLucis%2Bde%2BJerez%2B2013%2B%281%29.jpg"
+alt="María Santísima del Dulce Nombre en Jerez">
 
 
 </section>
@@ -297,7 +298,7 @@ alt="María Santísima del Dulce Nombre en el Vía Lucis de Jerez">
 <div class="creditos">
 
 Fotografías:
-Ayuntamiento de Jerez · Wikimedia Commons · El Pertiguero · La Voz del Sur · Andalucía Información · Fotografías de Bandera
+Ayuntamiento de Jerez · Wikimedia Commons · El Pertiguero · La Voz del Sur · Andalucía Información
 
 </div>
 
@@ -316,13 +317,13 @@ María Santísima del Dulce Nombre · Jerez de la Frontera
 </div>
 
 
-<!-- YOUTUBE OCULTO -->
+<!-- REPRODUCTOR OCULTO -->
 
 <div class="youtube">
 
 <iframe
 id="reproductor"
-src="https://www.youtube.com/embed/?autoplay=0&enablejsapi=1"
+src="https://www.youtube.com/embed/GCuDBo4F-Ac?start=2938&enablejsapi=1"
 allow="autoplay">
 </iframe>
 
@@ -332,12 +333,14 @@ allow="autoplay">
 <script>
 
 const boton = document.getElementById("botonMusica");
+const reproductor = document.getElementById("reproductor");
 
 boton.addEventListener("click", function() {
 
-  const url = "https://www.youtube.com/watch?v=GCuDBo4F-Ac";
-
-  window.open(url, "_blank");
+  reproductor.contentWindow.postMessage(
+    '{"event":"command","func":"playVideo","args":""}',
+    "*"
+  );
 
 });
 
