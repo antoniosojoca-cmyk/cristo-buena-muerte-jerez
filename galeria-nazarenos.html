@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nazarenos — Galería</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* CABECERA */
+
+header {
+  text-align: center;
+  padding: 55px 20px 35px;
+  border-bottom: 1px solid #c9a35b;
+}
+
+header h1 {
+  margin: 0;
+  color: #c9a35b;
+  font-size: 42px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #dddddd;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+/* MENU */
+
+.menu {
+  text-align: center;
+  padding: 22px 10px;
+  border-bottom: 1px solid #333333;
+}
+
+.menu a {
+  color: #c9a35b;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 17px;
+  transition: .3s;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+/* TITULO */
+
+.titulo {
+  text-align: center;
+  padding: 45px 20px 25px;
+}
+
+.titulo h2 {
+  color: #c9a35b;
+  font-size: 34px;
+  font-weight: normal;
+  margin: 0 0 12px;
+  letter-spacing: 1px;
+}
+
+.titulo p {
+  color: #cccccc;
+  font-size: 17px;
+  margin: 0;
+}
+
+/* GALERIA */
+
+.galeria {
+  width: 92%;
+  max-width: 1200px;
+  margin: 30px auto 70px;
+}
+
+/* FOTOGRAFIAS */
+
+.galeria img {
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto 40px;
+  background: #050505;
+  border: 2px solid #c9a35b;
+  padding: 0;
+  transition: .3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.01);
+}
+
+/* CREDITOS */
+
+.creditos {
+  text-align: center;
+  color: #777777;
+  font-size: 12px;
+  margin: 20px auto 45px;
+  width: 90%;
+}
+
+/* PIE */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #333333;
+  color: #888888;
+  font-size: 13px;
+}
+
+/* BOTON MUSICA */
+
+.musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #c9a35b;
+  color: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(201,163,91,0.45);
+  transition: .3s;
+}
+
+.musica:hover {
+  transform: scale(1.08);
+}
+
+/* YOUTUBE OCULTO */
+
+.youtube {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  left: -100px;
+  top: -100px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.youtube iframe {
+  width: 1px;
+  height: 1px;
+  border: 0;
+}
+
+/* MOVIL */
+
+@media(max-width:800px) {
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .titulo h2 {
+    font-size: 28px;
+  }
+
+  .galeria {
+    width: 95%;
+  }
+
+  .galeria img {
+    height: 600px;
+  }
+
+  .menu a {
+    display: inline-block;
+    margin: 7px 8px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<h1>Galería</h1>
+
+<p>
+Cristo de la Buena Muerte · Jerez de la Frontera
+</p>
+
+</header>
+
+
+<nav class="menu">
+
+<a href="index.html">Portada</a>
+
+<a href="madruga.html">La Madrugá</a>
+
+<a href="dulce-nombre.html">Dulce Nombre</a>
+
+<a href="itinerario.html">Itinerario</a>
+
+<a href="galeria.html">Galería</a>
+
+</nav>
+
+
+<section class="titulo">
+
+<h2>Los Nazarenos</h2>
+
+<p>
+El cortejo de la Buena Muerte en la Madrugá de Jerez
+</p>
+
+</section>
+
+
+<section class="galeria">
+
+
+<!-- FOTOGRAFIA 1 -->
+
+<img
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Madrugada_Viernes_Santo_2019_Jerez-P1350766.jpg"
+alt="Nazarenos de la Hermandad de la Buena Muerte de Jerez">
+
+
+<!-- FOTOGRAFIA 2 -->
+
+<img
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Madrugada_Viernes_Santo_2019_Jerez-P1350767.jpg"
+alt="Nazarenos de la Buena Muerte durante la Madrugá">
+
+
+<!-- FOTOGRAFIA 3 -->
+
+<img
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Madrugada_Viernes_Santo_2019_Jerez-P1350768.jpg"
+alt="Cortejo de nazarenos de la Buena Muerte">
+
+
+<!-- FOTOGRAFIA 4 -->
+
+<img
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Madrugada_Viernes_Santo_2019_Jerez-P1350769.jpg"
+alt="Nazarenos de la Hermandad de la Buena Muerte">
+
+
+<!-- FOTOGRAFIA 5 -->
+
+<img
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Madrugada_Viernes_Santo_2019_Jerez-P1350770.jpg"
+alt="Cortejo de la Buena Muerte en Jerez">
+
+
+<!-- FOTOGRAFIA 6 -->
+
+<img
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Madrugada_Viernes_Santo_2019_Jerez-P1350771.jpg"
+alt="Nazarenos de la Buena Muerte en la Madrugá">
+
+
+</section>
+
+
+<div class="creditos">
+
+Fotografías: El Pantera · Wikimedia Commons ·
+Creative Commons BY-SA 4.0
+
+</div>
+
+
+<footer>
+
+Hermandad de la Buena Muerte · Jerez de la Frontera
+
+</footer>
+
+
+<!-- BOTON DE MUSICA -->
+
+<div class="musica" id="botonMusica">
+♪
+</div>
+
+
+<!-- REPRODUCTOR OCULTO -->
+
+<div class="youtube">
+
+<iframe
+id="reproductor"
+src="https://www.youtube.com/embed/GCuDBo4F-Ac?start=2938&enablejsapi=1"
+allow="autoplay">
+</iframe>
+
+</div>
+
+
+<script>
+
+const boton = document.getElementById("botonMusica");
+const reproductor = document.getElementById("reproductor");
+
+boton.addEventListener("click", function() {
+
+  reproductor.contentWindow.postMessage(
+    '{"event":"command","func":"playVideo","args":""}',
+    "*"
+  );
+
+});
+
+</script>
+
+
+</body>
+
+</html>
